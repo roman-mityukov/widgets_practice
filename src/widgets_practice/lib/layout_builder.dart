@@ -2,6 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 // дает constraints родителя своим потомкам
+// https://api.flutter.dev/flutter/widgets/LayoutBuilder-class.html
+// https://api.flutter.dev/flutter/rendering/BoxConstraints-class.html
+// https://www.youtube.com/watch?time_continue=1&v=IYDVcriKjsw&feature=emb_logo
 class LayoutBuilderPractice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
