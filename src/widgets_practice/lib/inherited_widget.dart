@@ -3,9 +3,9 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-// предоставляет данные по дереву вниз и ребилдит виджеты, которые используют эти
-// данные
-// updateShouldNotify если true, то ребилдит даже виджеты созданные через
+// Предоставляет данные по дереву вниз и ребилдит виджеты, которые используют эти
+// данные. Виджеты получают новые данные при перестроении.
+// Если updateShouldNotify == true, то ребилдит и виджеты созданные через
 // const конструктор
 // https://api.flutter.dev/flutter/widgets/InheritedWidget-class.html
 // https://medium.com/@mehmetf_71205/inheriting-widgets-b7ac56dbbeb1
