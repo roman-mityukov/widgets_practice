@@ -1,0 +1,67 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:widgetspractice/layout_builder.dart';
+
+void main() {
+  runApp(MaterialApp(
+    title: 'Flutter Demo',
+    theme: ThemeData(
+      primarySwatch: Colors.blue,
+      visualDensity: VisualDensity.adaptivePlatformDensity,
+    ),
+    home: MyHomePage(),
+  ));
+}
+
+class MyHomePage extends StatefulWidget {
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Widgets'),
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            _buildButton(
+              'LayoutBuilder',
+              () {
+                _navigateTo(LayoutBuilderPractice());
+              },
+            )
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildButton(String title, Function action) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16),
+      child: FlatButton(
+        color: Colors.green,
+        child: Text(
+          title,
+          style: TextStyle(color: Colors.white),
+        ),
+        onPressed: action,
+      ),
+    );
+  }
+
+  void _navigateTo(Widget widget) {
+    Navigator.of(context).push(
+      CupertinoPageRoute(
+        builder: (context) {
+          return widget;
+        },
+      ),
+    );
+  }
+}
