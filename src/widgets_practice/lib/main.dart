@@ -5,6 +5,8 @@ import 'package:widgetspractice/constrained_box.dart';
 import 'package:widgetspractice/container.dart';
 import 'package:widgetspractice/inherited_widget.dart';
 import 'package:widgetspractice/layout_builder.dart';
+import 'package:widgetspractice/limited_box.dart';
+import 'package:widgetspractice/unconstrained_box.dart';
 
 void main() {
   Logger.root.level = Level.ALL;
@@ -63,6 +65,18 @@ class _MyHomePageState extends State<MyHomePage> {
               'ConstrainedBox',
               () {
                 _navigateTo(ConstrainedBoxPractice());
+              },
+            ),
+            _buildButton(
+              'UnconstrainedBox',
+              () {
+                _navigateTo(UnconstrainedBoxPractice());
+              },
+            ),
+            _buildButton(
+              'LimitedBox',
+              () {
+                _navigateTo(LimitedBoxPractice());
               },
             ),
             _buildButton(
