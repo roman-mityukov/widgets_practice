@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
 import 'package:widgetspractice/align.dart';
+import 'package:widgetspractice/aspect_ratio.dart';
 import 'package:widgetspractice/center.dart';
 import 'package:widgetspractice/constrained_box.dart';
 import 'package:widgetspractice/fitted_box.dart';
@@ -56,6 +57,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'Align',
               () {
                 _navigateTo(AlignPractice());
+              },
+            ),
+            _buildButton(
+              'AspectRatio',
+                  () {
+                _navigateTo(AspectRatioPractice());
               },
             ),
             _buildButton(
