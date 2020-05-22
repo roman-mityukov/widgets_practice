@@ -4,6 +4,7 @@ import 'package:logging/logging.dart';
 import 'package:widgetspractice/constrained_box.dart';
 import 'package:widgetspractice/container.dart';
 import 'package:widgetspractice/fitted_box.dart';
+import 'package:widgetspractice/flex.dart';
 import 'package:widgetspractice/inherited_widget.dart';
 import 'package:widgetspractice/layout_builder.dart';
 import 'package:widgetspractice/limited_box.dart';
@@ -84,6 +85,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'FittedBox',
               () {
                 _navigateTo(FittedBoxPractice());
+              },
+            ),
+            _buildButton(
+              'Flex',
+              () {
+                _navigateTo(FlexPractice());
               },
             ),
             _buildButton(
