@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
+import 'package:widgetspractice/align.dart';
 import 'package:widgetspractice/constrained_box.dart';
 import 'package:widgetspractice/container.dart';
 import 'package:widgetspractice/fitted_box.dart';
@@ -51,6 +52,12 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            _buildButton(
+              'Align',
+              () {
+                _navigateTo(AlignPractice());
+              },
+            ),
             _buildButton(
               'LayoutBuilder',
               () {
