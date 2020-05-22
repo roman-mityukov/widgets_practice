@@ -16,10 +16,6 @@ class AlignPractice extends StatelessWidget {
         children: <Widget>[
           ConstrainedBox(
             constraints: BoxConstraints.tightFor(width: 100, height: 100),
-            // Так как выше есть ConstrainedBox, то FittedBox будет размером
-            // 100х100 и он смасштабирует Container так, чтобы он поместился в
-            // FittedBox целиком. Т.к. Alignment.center то Container будет выровнен
-            // по центру.
             child: Container(
               color: Colors.black87,
               child: Align(

@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
 import 'package:widgetspractice/align.dart';
+import 'package:widgetspractice/center.dart';
 import 'package:widgetspractice/constrained_box.dart';
-import 'package:widgetspractice/container.dart';
 import 'package:widgetspractice/fitted_box.dart';
 import 'package:widgetspractice/flex.dart';
 import 'package:widgetspractice/inherited_widget.dart';
@@ -59,6 +59,12 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             _buildButton(
+              'Center',
+              () {
+                _navigateTo(CenterPractice());
+              },
+            ),
+            _buildButton(
               'LayoutBuilder',
               () {
                 _navigateTo(LayoutBuilderPractice());
@@ -100,12 +106,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 _navigateTo(FlexPractice());
               },
             ),
-            _buildButton(
-              'Container',
-              () {
-                _navigateTo(ContainerPractice());
-              },
-            )
           ],
         ),
       ),
