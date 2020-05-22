@@ -4,6 +4,7 @@ import 'package:logging/logging.dart';
 import 'package:widgetspractice/align.dart';
 import 'package:widgetspractice/aspect_ratio.dart';
 import 'package:widgetspractice/center.dart';
+import 'package:widgetspractice/column.dart';
 import 'package:widgetspractice/constrained_box.dart';
 import 'package:widgetspractice/fitted_box.dart';
 import 'package:widgetspractice/flex.dart';
@@ -111,6 +112,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'Flex',
               () {
                 _navigateTo(FlexPractice());
+              },
+            ),
+            _buildButton(
+              'Column',
+                  () {
+                _navigateTo(ColumnPractice());
               },
             ),
           ],
