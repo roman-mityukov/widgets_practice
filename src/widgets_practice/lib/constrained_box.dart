@@ -24,3 +24,28 @@ class ConstrainedBoxPractice extends StatelessWidget {
     );
   }
 }
+
+class TwoConstrainedBoxesPractice extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      // Родительский ConstrainedBox отменяет ограничения потомка, т.к. они
+      // просто дополнительные и в этом случае противоречат родительским
+      body: ConstrainedBox(
+        constraints: BoxConstraints.tightFor(
+          width: double.infinity,
+          height: double.infinity,
+        ),
+        child: ConstrainedBox(
+          constraints: BoxConstraints(
+              minWidth: 50, maxWidth: 70, minHeight: 50, maxHeight: 70),
+          child: Container(
+            width: 100,
+            height: 100,
+            color: Colors.green,
+          ),
+        ),
+      ),
+    );
+  }
+}
