@@ -8,6 +8,7 @@ import 'package:widgetspractice/column.dart';
 import 'package:widgetspractice/constrained_box.dart';
 import 'package:widgetspractice/fitted_box.dart';
 import 'package:widgetspractice/flex.dart';
+import 'package:widgetspractice/fractionally_sized_box.dart';
 import 'package:widgetspractice/inherited_widget.dart';
 import 'package:widgetspractice/layout_builder.dart';
 import 'package:widgetspractice/limited_box.dart';
@@ -63,8 +64,14 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             _buildButton(
               'AspectRatio',
-                  () {
+              () {
                 _navigateTo(AspectRatioPractice());
+              },
+            ),
+            _buildButton(
+              'FractionallySizedBox',
+              () {
+                _navigateTo(FractionallySizedBoxPractice());
               },
             ),
             _buildButton(
@@ -117,13 +124,13 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             _buildButton(
               'Column',
-                  () {
+              () {
                 _navigateTo(ColumnPractice());
               },
             ),
             _buildButton(
               'Row',
-                  () {
+              () {
                 _navigateTo(RowPractice());
               },
             ),
