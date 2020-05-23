@@ -15,6 +15,8 @@ import 'package:widgetspractice/limited_box.dart';
 import 'package:widgetspractice/row.dart';
 import 'package:widgetspractice/unconstrained_box.dart';
 
+import 'container.dart';
+
 void main() {
   Logger.root.level = Level.ALL;
 
@@ -78,6 +80,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'Center',
               () {
                 _navigateTo(CenterPractice());
+              },
+            ),
+            _buildButton(
+              'Container',
+              () {
+                _navigateTo(ContainerPractice());
               },
             ),
             _buildButton(
