@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:widgetspractice/layout/baseline.dart';
 
 import 'align.dart';
 import 'aspect_ratio.dart';
@@ -52,6 +53,12 @@ class LayoutWidgets extends StatelessWidget {
               'AspectRatio',
               () {
                 _navigateTo(AspectRatioPractice());
+              },
+            ),
+            _buildButton(
+              'Baseline',
+                  () {
+                _navigateTo(BaseLinePractice());
               },
             ),
             _buildButton(
