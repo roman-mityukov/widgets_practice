@@ -9,6 +9,7 @@ import 'package:widgetspractice/constrained_box.dart';
 import 'package:widgetspractice/expanded.dart';
 import 'package:widgetspractice/fitted_box.dart';
 import 'package:widgetspractice/flex.dart';
+import 'package:widgetspractice/flexible.dart';
 import 'package:widgetspractice/fractionally_sized_box.dart';
 import 'package:widgetspractice/inherited_widget.dart';
 import 'package:widgetspractice/layout_builder.dart';
@@ -87,6 +88,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'Container',
               () {
                 _navigateTo(ContainerPractice());
+              },
+            ),
+            _buildButton(
+              'Flexible',
+              () {
+                _navigateTo(FlexiblePractice());
               },
             ),
             _buildButton(

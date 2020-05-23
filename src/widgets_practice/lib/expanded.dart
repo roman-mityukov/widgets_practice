@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-// Позволяет потомку занять все свободное место в Column, Row, Flex
+// Позволяет потомку занять все свободное место в Column, Row, Flex в
+// направлении main axis. Просто расширяет Flexible и передает в его
+// конструктор flex:1, fit: FlexFit.tight
 // https://api.flutter.dev/flutter/widgets/Expanded-class.html
 class ExpandedPractice extends StatelessWidget {
   @override
