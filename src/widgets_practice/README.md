@@ -1,17 +1,190 @@
 # widgetspractice
 
-Accessibility - 3 
-Layout - 31
-Assets, images, and icon widgets - 4
-Animations - 21
-Async - 2
-Input - 3
-Interaction model - 10
-Painting and effect widgets - 10
-Scrolling widgets - 11
-Styling widgets - 2
-Text - 3
-Material - 40
-Cupertino - 24
+Accessibility - 3/0
+- Semantics
+- MergeSemantics
+- ExcludeSemantics
 
-164
+Layout - 31/16
++ Align
++ AspectRatio
+- Baseline
++ Center
++ ConstrainedBox
++ Container
+- CustomSingleChildLayout
++ Expanded
++ FittedBox
++ FractionallySizedBox
++ IntrinsicHeight
++ IntrinsicWidth
++ LimitedBox
+- Offstage
+- OverflowBox
+- Padding
+- SizedBox
+- SizedBoxOverflow
+- Transform
++ Column
+- CustomMultiChildLayout
+- Flow
+- GridView
+- IndexedStack
++ LayoutBuilder
+- ListBody
+- ListView
++ Row
+- Stack
++ Table
++ Wrap
+
+Assets, images, and icon widgets - 4/0
+- AssetBundle
+- Icon
+- Image
+- RawImage
+
+Animations - 21/0
+- AnimatedBuilder
+- AnimatedContainer
+- AnimatedCrossFade
+- AnimatedDefaultTextStyle
+- AnimatedListState
+- AnimatedModalBarrier
+- AnimatedOpacity
+- AnimatedWidget
+- AnimatedWidgetBaseState
+- DecoratedBoxTransition
+- FadeTransition
+- Hero
+- PositionedTransition
+- RotationTransition
+- ScaleTransition
+- SizeTransition
+- SlideTransition
+
+Async - 2/0
+- FutureBuilder
+- StreamBuilder
+
+Input - 3/0
+- Form
+- FormField
+- RawKeyboardListener
+
+Interaction models - 10/0
+- AbsorbPointer
+- Dismissible
+- DragTarget
+- Draggable
+- GestureDetector
+- IgnorePointer
+- LongPressDraggable
+- Scrollable
+- Hero
+- Navigator
+
+Painting and effects - 10/0
+- BackdropFilter
+- ClipOval
+- ClipPath
+- ClipRect
+- CustomPaint
+- DecoratedBox
+- FractionalTransition
+- Opacity
+- RotatedBox
+- Transform
+
+Scrolling widgets - 11/0
+- CustomScrollView
+- GridView
+- ListView
+- NestedScrollView
+- NotificationListener
+- PageView
+- RefreshIndicator
+- ScrollConfiguration
+- Scrollable
+- Scrollbar
+- SingleChildScrollView
+
+Styling widgets - 3/0
+- MediaQuery
+- Padding
+- Theme
+
+Text - 3/0
+- DefaultTextStyle
+- RichText
+- Text
+
+Material - 37/0
+- Appbar
+- BottomNavigationBar
+- Drawer
+- MaterialApp
+- Scaffold
+- SliverAppBar
+- TabBar
+- TabBarView
+- WidgetsApp
+- ButtonBar
+- DropdownButton
+- FlatButton
+- FloatingActionButton
+- IconButton
+- OutlineButton
+- PopupMenuButton
+- RaisedButton
+- Checkbox
+- DateTimePickers
+- Radio
+- Slider
+- Switch
+- TextField
+- AlertDialog
+- BottomSheet
+- ExpansionPanel
+- SimpleDialog
+- SnackBar
+- Card
+- Chip
+- CircularProgressIndicator
+- DataTable
+- GridView
+- Icon
+- Image
+- LinearProgressIndicator
+- Tooltip
+- Divider
+- ListTile
+- Stepper
+
+Cupertino - 24/0
+- CupertinoActionSheet
+- CupertinoActivityIndicator
+- CupertinoAlertDialog
+- CupertinoButton
+- CupertinoContextMenu
+- CupertinoDatePicker
+- CupertinoDialog
+- CupertinoDialogAction
+- CupertinoFullScreenDialogTransition
+- CupertinoNavigationBar
+- CupertinoPageScaffold
+- CupertinoPageTransition
+- CupertinoPicker
+- CupertinoPopupSurface
+- CupertinoScrollbar
+- CupertinoSegmentedController
+- CupertinoSlider
+- CupertinoSlidingSegmentedControl
+- CupertinoSwitch
+- CupertinoTabBar
+- CupertinoTabScaffold
+- CupertinoTabView
+- CupertinoTextField
+- CupertinoTimePicker
+
+158

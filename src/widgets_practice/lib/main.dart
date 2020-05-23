@@ -1,26 +1,27 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
-import 'package:widgetspractice/align.dart';
-import 'package:widgetspractice/aspect_ratio.dart';
-import 'package:widgetspractice/center.dart';
-import 'package:widgetspractice/column.dart';
-import 'package:widgetspractice/constrained_box.dart';
-import 'package:widgetspractice/expanded.dart';
-import 'package:widgetspractice/fitted_box.dart';
-import 'package:widgetspractice/flex.dart';
-import 'package:widgetspractice/flexible.dart';
-import 'package:widgetspractice/fractionally_sized_box.dart';
-import 'package:widgetspractice/inherited_widget.dart';
-import 'package:widgetspractice/layout_builder.dart';
-import 'package:widgetspractice/limited_box.dart';
-import 'package:widgetspractice/row.dart';
-import 'package:widgetspractice/spacer.dart';
-import 'package:widgetspractice/unconstrained_box.dart';
+import 'package:widgetspractice/layout/align.dart';
+import 'package:widgetspractice/layout/aspect_ratio.dart';
+import 'package:widgetspractice/layout/center.dart';
+import 'package:widgetspractice/layout/column.dart';
+import 'package:widgetspractice/layout/constrained_box.dart';
+import 'package:widgetspractice/layout/expanded.dart';
+import 'package:widgetspractice/layout/fitted_box.dart';
+import 'package:widgetspractice/layout/flex.dart';
+import 'package:widgetspractice/layout/flexible.dart';
+import 'package:widgetspractice/layout/fractionally_sized_box.dart';
+import 'package:widgetspractice/layout/inherited_widget.dart';
+import 'package:widgetspractice/layout/layout_builder.dart';
+import 'package:widgetspractice/layout/layout_widgets.dart';
+import 'package:widgetspractice/layout/limited_box.dart';
+import 'package:widgetspractice/layout/row.dart';
+import 'package:widgetspractice/layout/spacer.dart';
+import 'package:widgetspractice/layout/unconstrained_box.dart';
 
-import 'container.dart';
-import 'intrinsic_height.dart';
-import 'intrinsic_width.dart';
+import 'layout/container.dart';
+import 'layout/intrinsic_height.dart';
+import 'layout/intrinsic_width.dart';
 
 void main() {
   Logger.root.level = Level.ALL;
@@ -64,117 +65,9 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             _buildButton(
-              'Align',
+              'LayoutWidgets',
               () {
-                _navigateTo(AlignPractice());
-              },
-            ),
-            _buildButton(
-              'AspectRatio',
-              () {
-                _navigateTo(AspectRatioPractice());
-              },
-            ),
-            _buildButton(
-              'FractionallySizedBox',
-              () {
-                _navigateTo(FractionallySizedBoxPractice());
-              },
-            ),
-            _buildButton(
-              'Center',
-              () {
-                _navigateTo(CenterPractice());
-              },
-            ),
-            _buildButton(
-              'Container',
-              () {
-                _navigateTo(ContainerPractice());
-              },
-            ),
-            _buildButton(
-              'Flexible',
-              () {
-                _navigateTo(FlexiblePractice());
-              },
-            ),
-            _buildButton(
-              'Expanded',
-              () {
-                _navigateTo(ExpandedPractice());
-              },
-            ),
-            _buildButton(
-              'IntrinsicWidth',
-                  () {
-                _navigateTo(IntrinsicWidthPractice());
-              },
-            ),
-            _buildButton(
-              'IntrinsicHeight',
-                  () {
-                _navigateTo(IntrinsicHeightPractice());
-              },
-            ),
-            _buildButton(
-              'Spacer',
-              () {
-                _navigateTo(SpacerPractice());
-              },
-            ),
-            _buildButton(
-              'LayoutBuilder',
-              () {
-                _navigateTo(LayoutBuilderPractice());
-              },
-            ),
-            _buildButton(
-              'InheritedWidget',
-              () {
-                _navigateTo(InheritedWidgetPractice());
-              },
-            ),
-            _buildButton(
-              'ConstrainedBox',
-              () {
-                _navigateTo(ConstrainedBoxPractice());
-              },
-            ),
-            _buildButton(
-              'UnconstrainedBox',
-              () {
-                _navigateTo(UnconstrainedBoxPractice());
-              },
-            ),
-            _buildButton(
-              'LimitedBox',
-              () {
-                _navigateTo(LimitedBoxPractice());
-              },
-            ),
-            _buildButton(
-              'FittedBox',
-              () {
-                _navigateTo(FittedBoxPractice());
-              },
-            ),
-            _buildButton(
-              'Flex',
-              () {
-                _navigateTo(FlexPractice());
-              },
-            ),
-            _buildButton(
-              'Column',
-              () {
-                _navigateTo(ColumnPractice());
-              },
-            ),
-            _buildButton(
-              'Row',
-              () {
-                _navigateTo(RowPractice());
+                _navigateTo(LayoutWidgets());
               },
             ),
           ],
