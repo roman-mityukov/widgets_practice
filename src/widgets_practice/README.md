@@ -22,7 +22,7 @@ Layout - 31/18
 - Offstage
 - OverflowBox
 + Padding
-- SizedBox
++ SizedBox
 - SizedBoxOverflow
 - Transform
 + Column

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetspractice/layout/baseline.dart';
 import 'package:widgetspractice/layout/padding.dart';
+import 'package:widgetspractice/layout/sized_box.dart';
 
 import 'align.dart';
 import 'aspect_ratio.dart';
@@ -156,6 +157,12 @@ class LayoutWidgets extends StatelessWidget {
               'Row',
               () {
                 _navigateTo(RowPractice());
+              },
+            ),
+            _buildButton(
+              'SizedBox',
+              () {
+                _navigateTo(SizedBoxPractice());
               },
             ),
             _buildButton(
