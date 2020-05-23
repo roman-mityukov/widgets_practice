@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetspractice/layout/baseline.dart';
+import 'package:widgetspractice/layout/padding.dart';
 
 import 'align.dart';
 import 'aspect_ratio.dart';
@@ -57,14 +58,8 @@ class LayoutWidgets extends StatelessWidget {
             ),
             _buildButton(
               'Baseline',
-                  () {
-                _navigateTo(BaseLinePractice());
-              },
-            ),
-            _buildButton(
-              'FractionallySizedBox',
               () {
-                _navigateTo(FractionallySizedBoxPractice());
+                _navigateTo(BaseLinePractice());
               },
             ),
             _buildButton(
@@ -74,51 +69,9 @@ class LayoutWidgets extends StatelessWidget {
               },
             ),
             _buildButton(
-              'Container',
+              'Column',
               () {
-                _navigateTo(ContainerPractice());
-              },
-            ),
-            _buildButton(
-              'Flexible',
-              () {
-                _navigateTo(FlexiblePractice());
-              },
-            ),
-            _buildButton(
-              'Expanded',
-              () {
-                _navigateTo(ExpandedPractice());
-              },
-            ),
-            _buildButton(
-              'IntrinsicWidth',
-              () {
-                _navigateTo(IntrinsicWidthPractice());
-              },
-            ),
-            _buildButton(
-              'IntrinsicHeight',
-              () {
-                _navigateTo(IntrinsicHeightPractice());
-              },
-            ),
-            _buildButton(
-              'Spacer',
-              () {
-                _navigateTo(SpacerPractice());
-              },
-            ),
-            _buildButton(
-              'LayoutBuilder',
-              () {
-                _navigateTo(LayoutBuilderPractice());
-              },
-            ),
-            _buildButton(
-              'InheritedWidget',
-              () {
-                _navigateTo(InheritedWidgetPractice());
+                _navigateTo(ColumnPractice());
               },
             ),
             _buildButton(
@@ -128,15 +81,9 @@ class LayoutWidgets extends StatelessWidget {
               },
             ),
             _buildButton(
-              'UnconstrainedBox',
+              'Container',
               () {
-                _navigateTo(UnconstrainedBoxPractice());
-              },
-            ),
-            _buildButton(
-              'LimitedBox',
-              () {
-                _navigateTo(LimitedBoxPractice());
+                _navigateTo(ContainerPractice());
               },
             ),
             _buildButton(
@@ -152,15 +99,75 @@ class LayoutWidgets extends StatelessWidget {
               },
             ),
             _buildButton(
-              'Column',
+              'Flexible',
               () {
-                _navigateTo(ColumnPractice());
+                _navigateTo(FlexiblePractice());
+              },
+            ),
+            _buildButton(
+              'FractionallySizedBox',
+              () {
+                _navigateTo(FractionallySizedBoxPractice());
+              },
+            ),
+            _buildButton(
+              'Expanded',
+              () {
+                _navigateTo(ExpandedPractice());
+              },
+            ),
+            _buildButton(
+              'InheritedWidget',
+              () {
+                _navigateTo(InheritedWidgetPractice());
+              },
+            ),
+            _buildButton(
+              'IntrinsicWidth',
+              () {
+                _navigateTo(IntrinsicWidthPractice());
+              },
+            ),
+            _buildButton(
+              'IntrinsicHeight',
+              () {
+                _navigateTo(IntrinsicHeightPractice());
+              },
+            ),
+            _buildButton(
+              'LayoutBuilder',
+              () {
+                _navigateTo(LayoutBuilderPractice());
+              },
+            ),
+            _buildButton(
+              'LimitedBox',
+              () {
+                _navigateTo(LimitedBoxPractice());
+              },
+            ),
+            _buildButton(
+              'Padding',
+              () {
+                _navigateTo(PaddingPractice());
               },
             ),
             _buildButton(
               'Row',
               () {
                 _navigateTo(RowPractice());
+              },
+            ),
+            _buildButton(
+              'Spacer',
+              () {
+                _navigateTo(SpacerPractice());
+              },
+            ),
+            _buildButton(
+              'UnconstrainedBox',
+              () {
+                _navigateTo(UnconstrainedBoxPractice());
               },
             ),
           ],

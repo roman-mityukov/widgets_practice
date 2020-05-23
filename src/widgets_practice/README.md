@@ -5,10 +5,10 @@ Accessibility - 3/0
 - MergeSemantics
 - ExcludeSemantics
 
-Layout - 31/16
+Layout - 31/18
 + Align
 + AspectRatio
-- Baseline
++ Baseline
 + Center
 + ConstrainedBox
 + Container
@@ -21,7 +21,7 @@ Layout - 31/16
 + LimitedBox
 - Offstage
 - OverflowBox
-- Padding
++ Padding
 - SizedBox
 - SizedBoxOverflow
 - Transform
