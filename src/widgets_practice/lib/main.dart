@@ -11,6 +11,7 @@ import 'package:widgetspractice/flex.dart';
 import 'package:widgetspractice/inherited_widget.dart';
 import 'package:widgetspractice/layout_builder.dart';
 import 'package:widgetspractice/limited_box.dart';
+import 'package:widgetspractice/row.dart';
 import 'package:widgetspractice/unconstrained_box.dart';
 
 void main() {
@@ -118,6 +119,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'Column',
                   () {
                 _navigateTo(ColumnPractice());
+              },
+            ),
+            _buildButton(
+              'Row',
+                  () {
+                _navigateTo(RowPractice());
               },
             ),
           ],

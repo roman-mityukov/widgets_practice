@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-// Показывает потомков в вертикальном одномерном массиве
+// Показывает потомков в горизонтальном одномерном массиве
 // mainAxisSize - max - оставляет доступное свободное пространство,
 // min - убирает его. По умолчанию MainAxisSize.max
 // crossAxisAlignment выравнивает по cross axis, если
 // CrossAxisAlignment.stretch, то дает своим детям в качестве
-// ограничения по высоте свой maxWidth
-// https://api.flutter.dev/flutter/widgets/Column-class.html
-class ColumnPractice extends StatelessWidget {
+// ограничения по высоте свой maxHeight
+// https://api.flutter.dev/flutter/widgets/Row-class.html
+class RowPractice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Columnt'),),
-      body: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      appBar: AppBar(title: Text('Row'),),
+      body: Column(
         children: <Widget>[
-          Column(
+          Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               Text('start'),
@@ -37,7 +36,7 @@ class ColumnPractice extends StatelessWidget {
               ),
             ],
           ),
-          Column(
+          Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text('center'),
@@ -58,7 +57,7 @@ class ColumnPractice extends StatelessWidget {
               ),
             ],
           ),
-          Column(
+          Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
               Text('end'),
@@ -79,7 +78,7 @@ class ColumnPractice extends StatelessWidget {
               ),
             ],
           ),
-          Column(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Text('space\nbetween'),
@@ -100,7 +99,7 @@ class ColumnPractice extends StatelessWidget {
               ),
             ],
           ),
-          Column(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               Text('space\naround'),
@@ -121,32 +120,10 @@ class ColumnPractice extends StatelessWidget {
               ),
             ],
           ),
-          Column(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               Text('space\nevenly'),
-              Container(
-                color: Colors.red,
-                width: 50,
-                height: 50,
-              ),
-              Container(
-                color: Colors.red,
-                width: 50,
-                height: 50,
-              ),
-              Container(
-                color: Colors.red,
-                width: 50,
-                height: 50,
-              ),
-            ],
-          ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              Text('end_min'),
               Container(
                 color: Colors.red,
                 width: 50,
