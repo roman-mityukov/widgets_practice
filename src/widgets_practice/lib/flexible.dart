@@ -14,13 +14,11 @@ class FlexiblePractice extends StatelessWidget {
         children: <Widget>[
           Column(
             children: <Widget>[
-              // в этом примере используется ширина для получения высоты
               Container(
                 width: 100,
                 height: 100,
                 color: Colors.red,
               ),
-              // в этом примере используется высота для получения ширины
               Flexible(
                 flex: 1,
                 fit: FlexFit.tight,
@@ -39,13 +37,11 @@ class FlexiblePractice extends StatelessWidget {
           ),
           Column(
             children: <Widget>[
-              // в этом примере используется ширина для получения высоты
               Container(
                 width: 100,
                 height: 100,
                 color: Colors.red,
               ),
-              // в этом примере используется высота для получения ширины
               Flexible(
                 flex: 1,
                 fit: FlexFit.loose,

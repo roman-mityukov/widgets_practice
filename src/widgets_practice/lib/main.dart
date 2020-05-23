@@ -15,6 +15,7 @@ import 'package:widgetspractice/inherited_widget.dart';
 import 'package:widgetspractice/layout_builder.dart';
 import 'package:widgetspractice/limited_box.dart';
 import 'package:widgetspractice/row.dart';
+import 'package:widgetspractice/spacer.dart';
 import 'package:widgetspractice/unconstrained_box.dart';
 
 import 'container.dart';
@@ -100,6 +101,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'Expanded',
               () {
                 _navigateTo(ExpandedPractice());
+              },
+            ),
+            _buildButton(
+              'Spacer',
+              () {
+                _navigateTo(SpacerPractice());
               },
             ),
             _buildButton(
