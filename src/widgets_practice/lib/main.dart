@@ -6,6 +6,7 @@ import 'package:widgetspractice/aspect_ratio.dart';
 import 'package:widgetspractice/center.dart';
 import 'package:widgetspractice/column.dart';
 import 'package:widgetspractice/constrained_box.dart';
+import 'package:widgetspractice/expanded.dart';
 import 'package:widgetspractice/fitted_box.dart';
 import 'package:widgetspractice/flex.dart';
 import 'package:widgetspractice/fractionally_sized_box.dart';
@@ -86,6 +87,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'Container',
               () {
                 _navigateTo(ContainerPractice());
+              },
+            ),
+            _buildButton(
+              'Expanded',
+              () {
+                _navigateTo(ExpandedPractice());
               },
             ),
             _buildButton(
