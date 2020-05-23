@@ -19,6 +19,7 @@ import 'package:widgetspractice/spacer.dart';
 import 'package:widgetspractice/unconstrained_box.dart';
 
 import 'container.dart';
+import 'intrinsic_width.dart';
 
 void main() {
   Logger.root.level = Level.ALL;
@@ -101,6 +102,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'Expanded',
               () {
                 _navigateTo(ExpandedPractice());
+              },
+            ),
+            _buildButton(
+              'IntrinsicWidth',
+                  () {
+                _navigateTo(IntrinsicWidthPractice());
               },
             ),
             _buildButton(
