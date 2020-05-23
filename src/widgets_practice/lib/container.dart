@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 // Compose, decorate and position child widget. Виджет состоит из нескольких

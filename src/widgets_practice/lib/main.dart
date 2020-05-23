@@ -19,6 +19,7 @@ import 'package:widgetspractice/spacer.dart';
 import 'package:widgetspractice/unconstrained_box.dart';
 
 import 'container.dart';
+import 'intrinsic_height.dart';
 import 'intrinsic_width.dart';
 
 void main() {
@@ -108,6 +109,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'IntrinsicWidth',
                   () {
                 _navigateTo(IntrinsicWidthPractice());
+              },
+            ),
+            _buildButton(
+              'IntrinsicHeight',
+                  () {
+                _navigateTo(IntrinsicHeightPractice());
               },
             ),
             _buildButton(

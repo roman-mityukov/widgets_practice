@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 // Позволяет потомку занять все свободное место в Column, Row, Flex в
