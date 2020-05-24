@@ -5,7 +5,7 @@ Accessibility - 3/0
 - MergeSemantics
 - ExcludeSemantics
 
-Layout - 31/21
+Layout - 31/22
 + Align
 + AspectRatio
 + Baseline
@@ -19,7 +19,7 @@ Layout - 31/21
 + IntrinsicHeight
 + IntrinsicWidth
 + LimitedBox
-- Offstage
++ Offstage
 - OverflowBox
 + Padding
 + SizedBox
