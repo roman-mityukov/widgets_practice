@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:widgetspractice/layout/baseline.dart';
 import 'package:widgetspractice/layout/padding.dart';
 import 'package:widgetspractice/layout/sized_box.dart';
+import 'package:widgetspractice/layout/stack.dart';
 
 import 'align.dart';
 import 'aspect_ratio.dart';
@@ -169,6 +170,12 @@ class LayoutWidgets extends StatelessWidget {
               'Spacer',
               () {
                 _navigateTo(SpacerPractice());
+              },
+            ),
+            _buildButton(
+              'Stack',
+              () {
+                _navigateTo(StackPractice());
               },
             ),
             _buildButton(

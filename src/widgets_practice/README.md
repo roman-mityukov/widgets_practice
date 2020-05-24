@@ -5,7 +5,7 @@ Accessibility - 3/0
 - MergeSemantics
 - ExcludeSemantics
 
-Layout - 31/18
+Layout - 31/20
 + Align
 + AspectRatio
 + Baseline
@@ -34,7 +34,7 @@ Layout - 31/18
 - ListBody
 - ListView
 + Row
-- Stack
++ Stack
 + Table
 + Wrap
 
