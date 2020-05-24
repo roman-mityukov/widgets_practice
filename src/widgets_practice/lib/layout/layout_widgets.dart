@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetspractice/layout/baseline.dart';
+import 'package:widgetspractice/layout/overflow_box.dart';
 import 'package:widgetspractice/layout/padding.dart';
 import 'package:widgetspractice/layout/sized_box.dart';
 import 'package:widgetspractice/layout/stack.dart';
@@ -160,6 +161,12 @@ class LayoutWidgets extends StatelessWidget {
               'Offstage',
               () {
                 _navigateTo(OffstagePractice());
+              },
+            ),
+            _buildButton(
+              'OverflowBox',
+                  () {
+                _navigateTo(OverflowBoxPractice());
               },
             ),
             _buildButton(
