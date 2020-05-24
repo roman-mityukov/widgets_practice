@@ -4,6 +4,7 @@ import 'package:widgetspractice/layout/baseline.dart';
 import 'package:widgetspractice/layout/overflow_box.dart';
 import 'package:widgetspractice/layout/padding.dart';
 import 'package:widgetspractice/layout/sized_box.dart';
+import 'package:widgetspractice/layout/sized_overflow_box.dart';
 import 'package:widgetspractice/layout/stack.dart';
 
 import 'align.dart';
@@ -165,7 +166,7 @@ class LayoutWidgets extends StatelessWidget {
             ),
             _buildButton(
               'OverflowBox',
-                  () {
+              () {
                 _navigateTo(OverflowBoxPractice());
               },
             ),
@@ -197,6 +198,12 @@ class LayoutWidgets extends StatelessWidget {
               'Stack',
               () {
                 _navigateTo(StackPractice());
+              },
+            ),
+            _buildButton(
+              'SizedOverflowBox',
+              () {
+                _navigateTo(SizedOverflowBoxPractice());
               },
             ),
             _buildButton(

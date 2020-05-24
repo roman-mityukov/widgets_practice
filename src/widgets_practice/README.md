@@ -5,7 +5,7 @@ Accessibility - 3/0
 - MergeSemantics
 - ExcludeSemantics
 
-Layout - 31/22
+Layout - 31/24
 + Align
 + AspectRatio
 + Baseline
@@ -23,7 +23,7 @@ Layout - 31/22
 + OverflowBox
 + Padding
 + SizedBox
-- SizedBoxOverflow
++ SizedBoxOverflow
 - Transform
 + Column
 - CustomMultiChildLayout
