@@ -16,6 +16,7 @@ import 'fitted_box.dart';
 import 'flex.dart';
 import 'flexible.dart';
 import 'fractionally_sized_box.dart';
+import 'indexed_stack.dart';
 import 'inherited_widget.dart';
 import 'intrinsic_height.dart';
 import 'intrinsic_width.dart';
@@ -116,6 +117,12 @@ class LayoutWidgets extends StatelessWidget {
               'Expanded',
               () {
                 _navigateTo(ExpandedPractice());
+              },
+            ),
+            _buildButton(
+              'IndexedStack',
+              () {
+                _navigateTo(IndexedStackPractice());
               },
             ),
             _buildButton(

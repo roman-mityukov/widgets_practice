@@ -5,7 +5,7 @@ Accessibility - 3/0
 - MergeSemantics
 - ExcludeSemantics
 
-Layout - 31/20
+Layout - 31/21
 + Align
 + AspectRatio
 + Baseline
@@ -29,7 +29,7 @@ Layout - 31/20
 - CustomMultiChildLayout
 - Flow
 - GridView
-- IndexedStack
++ IndexedStack
 + LayoutBuilder
 - ListBody
 - ListView
