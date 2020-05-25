@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetspractice/layout/baseline.dart';
+import 'package:widgetspractice/layout/grid_view.dart';
 import 'package:widgetspractice/layout/list_view.dart';
 import 'package:widgetspractice/layout/overflow_box.dart';
 import 'package:widgetspractice/layout/padding.dart';
@@ -95,6 +96,12 @@ class LayoutWidgets extends StatelessWidget {
               },
             ),
             _buildButton(
+              'Expanded',
+              () {
+                _navigateTo(ExpandedPractice());
+              },
+            ),
+            _buildButton(
               'FittedBox',
               () {
                 _navigateTo(FittedBoxPractice());
@@ -119,9 +126,9 @@ class LayoutWidgets extends StatelessWidget {
               },
             ),
             _buildButton(
-              'Expanded',
+              'GridView',
               () {
-                _navigateTo(ExpandedPractice());
+                _navigateTo(GridViewPractice());
               },
             ),
             _buildButton(
