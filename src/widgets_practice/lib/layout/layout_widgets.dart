@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetspractice/layout/baseline.dart';
+import 'package:widgetspractice/layout/flow.dart';
 import 'package:widgetspractice/layout/grid_view.dart';
 import 'package:widgetspractice/layout/list_view.dart';
 import 'package:widgetspractice/layout/overflow_box.dart';
@@ -121,6 +122,12 @@ class LayoutWidgets extends StatelessWidget {
               },
             ),
             _buildButton(
+              'Flow',
+              () {
+                _navigateTo(FlowPractice());
+              },
+            ),
+            _buildButton(
               'FractionallySizedBox',
               () {
                 _navigateTo(FractionallySizedBoxPractice());
@@ -170,7 +177,7 @@ class LayoutWidgets extends StatelessWidget {
             ),
             _buildButton(
               'ListBody',
-                  () {
+              () {
                 _navigateTo(ListBodyPractice());
               },
             ),
