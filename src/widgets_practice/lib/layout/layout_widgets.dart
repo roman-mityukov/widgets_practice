@@ -4,6 +4,7 @@ import 'package:widgetspractice/layout/baseline.dart';
 import 'package:widgetspractice/layout/list_view.dart';
 import 'package:widgetspractice/layout/overflow_box.dart';
 import 'package:widgetspractice/layout/padding.dart';
+import 'package:widgetspractice/layout/rotated_box.dart';
 import 'package:widgetspractice/layout/sized_box.dart';
 import 'package:widgetspractice/layout/sized_overflow_box.dart';
 import 'package:widgetspractice/layout/stack.dart';
@@ -181,6 +182,12 @@ class LayoutWidgets extends StatelessWidget {
               'Padding',
               () {
                 _navigateTo(PaddingPractice());
+              },
+            ),
+            _buildButton(
+              'RotatedBox',
+              () {
+                _navigateTo(RotatedBoxPractice());
               },
             ),
             _buildButton(
