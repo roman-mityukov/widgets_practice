@@ -1,27 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
-import 'package:widgetspractice/layout/align.dart';
-import 'package:widgetspractice/layout/aspect_ratio.dart';
-import 'package:widgetspractice/layout/center.dart';
-import 'package:widgetspractice/layout/column.dart';
-import 'package:widgetspractice/layout/constrained_box.dart';
-import 'package:widgetspractice/layout/expanded.dart';
-import 'package:widgetspractice/layout/fitted_box.dart';
-import 'package:widgetspractice/layout/flex.dart';
-import 'package:widgetspractice/layout/flexible.dart';
-import 'package:widgetspractice/layout/fractionally_sized_box.dart';
-import 'package:widgetspractice/layout/inherited_widget.dart';
-import 'package:widgetspractice/layout/layout_builder.dart';
+import 'package:widgetspractice/assets_images_icon/assets_images_icon_widgets.dart';
 import 'package:widgetspractice/layout/layout_widgets.dart';
-import 'package:widgetspractice/layout/limited_box.dart';
-import 'package:widgetspractice/layout/row.dart';
-import 'package:widgetspractice/layout/spacer.dart';
-import 'package:widgetspractice/layout/unconstrained_box.dart';
-
-import 'layout/container.dart';
-import 'layout/intrinsic_height.dart';
-import 'layout/intrinsic_width.dart';
 
 void main() {
   Logger.root.level = Level.ALL;
@@ -68,6 +49,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'LayoutWidgets',
               () {
                 _navigateTo(LayoutWidgets());
+              },
+            ),
+            _buildButton(
+              'AssetsImagesIconWidgets',
+              () {
+                _navigateTo(AssetsImagesIconWidgets());
               },
             ),
           ],
