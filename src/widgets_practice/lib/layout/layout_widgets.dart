@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetspractice/layout/baseline.dart';
+import 'package:widgetspractice/layout/list_view.dart';
 import 'package:widgetspractice/layout/overflow_box.dart';
 import 'package:widgetspractice/layout/padding.dart';
 import 'package:widgetspractice/layout/sized_box.dart';
@@ -156,6 +157,12 @@ class LayoutWidgets extends StatelessWidget {
               'LimitedBox',
               () {
                 _navigateTo(LimitedBoxPractice());
+              },
+            ),
+            _buildButton(
+              'ListView',
+              () {
+                _navigateTo(ListViewPractice());
               },
             ),
             _buildButton(
