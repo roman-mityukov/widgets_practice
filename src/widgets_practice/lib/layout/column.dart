@@ -12,7 +12,7 @@ class ColumnPractice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Columnt'),),
+      appBar: AppBar(title: Text('Column'),),
       body: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[

@@ -8,7 +8,7 @@ class OffstagePractice extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Stack'),
+        title: Text('Offstage'),
       ),
       body: Column(
         children: <Widget>[
