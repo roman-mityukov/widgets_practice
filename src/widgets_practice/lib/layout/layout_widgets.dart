@@ -27,6 +27,7 @@ import 'intrinsic_height.dart';
 import 'intrinsic_width.dart';
 import 'layout_builder.dart';
 import 'limited_box.dart';
+import 'list_body.dart';
 import 'offstage.dart';
 import 'row.dart';
 import 'spacer.dart';
@@ -165,6 +166,12 @@ class LayoutWidgets extends StatelessWidget {
               'LimitedBox',
               () {
                 _navigateTo(LimitedBoxPractice());
+              },
+            ),
+            _buildButton(
+              'ListBody',
+                  () {
+                _navigateTo(ListBodyPractice());
               },
             ),
             _buildButton(
