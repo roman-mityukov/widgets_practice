@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:widgetspractice/assets_images_icon/assets_bundle.dart';
 import 'package:widgetspractice/assets_images_icon/icon.dart';
 
 class AssetsImagesIconWidgets extends StatelessWidget {
@@ -23,6 +24,12 @@ class AssetsImagesIconWidgets extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            _buildButton(
+              'AssetsBundle',
+              () {
+                _navigateTo(AssetsBundlePractice());
+              },
+            ),
             _buildButton(
               'Icon',
               () {

@@ -39,9 +39,9 @@ Layout - 32/28
 - Table
 + Wrap
 
-Assets, images, and icon widgets - 4/0
-- AssetBundle
-- Icon
+Assets, images, and icon widgets - 4/2
++ AssetBundle
++ Icon
 - Image
 - RawImage
 
