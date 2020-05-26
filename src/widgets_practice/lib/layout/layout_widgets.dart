@@ -10,6 +10,7 @@ import 'package:widgetspractice/layout/rotated_box.dart';
 import 'package:widgetspractice/layout/sized_box.dart';
 import 'package:widgetspractice/layout/sized_overflow_box.dart';
 import 'package:widgetspractice/layout/stack.dart';
+import 'package:widgetspractice/layout/wrap.dart';
 
 import 'align.dart';
 import 'aspect_ratio.dart';
@@ -245,6 +246,12 @@ class LayoutWidgets extends StatelessWidget {
               'UnconstrainedBox',
               () {
                 _navigateTo(UnconstrainedBoxPractice());
+              },
+            ),
+            _buildButton(
+              'Wrap',
+              () {
+                _navigateTo(WrapPractice());
               },
             ),
           ],

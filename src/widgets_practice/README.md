@@ -5,7 +5,7 @@ Accessibility - 3/0
 - MergeSemantics
 - ExcludeSemantics
 
-Layout - 32/27
+Layout - 32/28
 + Align
 + AspectRatio
 + Baseline
@@ -37,7 +37,7 @@ Layout - 32/27
 + Row
 + Stack
 - Table
-- Wrap
++ Wrap
 
 Assets, images, and icon widgets - 4/0
 - AssetBundle
