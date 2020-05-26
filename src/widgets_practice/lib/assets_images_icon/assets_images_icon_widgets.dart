@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:widgetspractice/assets_images_icon/assets_bundle.dart';
-import 'package:widgetspractice/assets_images_icon/icon.dart';
+
+import 'assets_bundle.dart';
+import 'icon.dart';
+import 'image.dart';
 
 class AssetsImagesIconWidgets extends StatelessWidget {
   @override
@@ -34,6 +36,12 @@ class AssetsImagesIconWidgets extends StatelessWidget {
               'Icon',
               () {
                 _navigateTo(IconPractice());
+              },
+            ),
+            _buildButton(
+              'Image',
+              () {
+                _navigateTo(ImagePractice());
               },
             ),
           ],
