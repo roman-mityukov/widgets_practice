@@ -97,10 +97,8 @@ Painting and effects - 10/0
 - RotatedBox
 - Transform
 
-Scrolling widgets - 11/0
+Scrolling widgets - 9/0
 - CustomScrollView
-- GridView
-- ListView
 - NestedScrollView
 - NotificationListener
 - PageView
@@ -188,4 +186,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-158
+161/33
