@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
 import 'package:widgetspractice/assets_images_icon/assets_images_icon_widgets.dart';
 import 'package:widgetspractice/async/async_widgets.dart';
+import 'package:widgetspractice/interaction_models/interaction_models_widgets.dart';
 import 'package:widgetspractice/layout/layout_widgets.dart';
 
 void main() {
@@ -62,6 +63,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'AsyncWidgets',
               () {
                 _navigateTo(AsyncWidgets());
+              },
+            ),
+            _buildButton(
+              'InteractionModelsWidgets',
+              () {
+                _navigateTo(InteractionModelsWidgets());
               },
             ),
           ],

@@ -73,8 +73,8 @@ Input - 3/0
 - FormField
 - RawKeyboardListener
 
-Interaction models - 10/0
-- AbsorbPointer
+Interaction models - 10/1
++ AbsorbPointer
 - Dismissible
 - DragTarget
 - Draggable
