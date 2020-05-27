@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetspractice/interaction_models/absorb_pointer.dart';
+import 'package:widgetspractice/interaction_models/ignore_pointer.dart';
 
 class InteractionModelsWidgets extends StatelessWidget {
   @override
@@ -25,8 +26,14 @@ class InteractionModelsWidgets extends StatelessWidget {
           children: <Widget>[
             _buildButton(
               'AbsorbPointer',
-                  () {
+              () {
                 _navigateTo(AbsorbPointerPractice());
+              },
+            ),
+            _buildButton(
+              'IgnorePointer',
+              () {
+                _navigateTo(IgnorePointerPractice());
               },
             ),
           ],

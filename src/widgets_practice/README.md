@@ -73,13 +73,13 @@ Input - 3/0
 - FormField
 - RawKeyboardListener
 
-Interaction models - 10/1
+Interaction models - 10/2
 + AbsorbPointer
 - Dismissible
 - DragTarget
 - Draggable
 - GestureDetector
-- IgnorePointer
++ IgnorePointer
 - LongPressDraggable
 - Scrollable
 - Hero
@@ -186,4 +186,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-161/33
+161/35
