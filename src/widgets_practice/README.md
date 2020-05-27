@@ -39,10 +39,10 @@ Layout - 32/28
 - Table
 + Wrap
 
-Assets, images, and icon widgets - 4/2
+Assets, images, and icon widgets - 4/3
 + AssetBundle
 + Icon
-- Image
++ Image
 - RawImage
 
 Animations - 21/0
