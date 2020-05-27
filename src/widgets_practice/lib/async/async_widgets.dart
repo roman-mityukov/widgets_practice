@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:widgetspractice/async/future_builder.dart';
+
+import 'future_builder.dart';
+import 'stream_builder.dart';
 
 class AsyncWidgets extends StatelessWidget {
   @override
@@ -27,6 +29,12 @@ class AsyncWidgets extends StatelessWidget {
               'FutureBuilder',
               () {
                 _navigateTo(FutureBuilderPractice());
+              },
+            ),
+            _buildButton(
+              'StreamBuilder',
+              () {
+                _navigateTo(StreamBuilderPractice());
               },
             ),
           ],

@@ -64,9 +64,9 @@ Animations - 21/0
 - SizeTransition
 - SlideTransition
 
-Async - 2/0
-- FutureBuilder
-- StreamBuilder
+Async - 2/2
++ FutureBuilder
++ StreamBuilder
 
 Input - 3/0
 - Form
