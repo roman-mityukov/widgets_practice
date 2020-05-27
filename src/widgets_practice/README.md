@@ -5,7 +5,7 @@ Accessibility - 3/0
 - MergeSemantics
 - ExcludeSemantics
 
-Layout - 32/28
+Layout - 31/27
 + Align
 + AspectRatio
 + Baseline
@@ -33,7 +33,6 @@ Layout - 32/28
 + LayoutBuilder
 + ListBody
 + ListView
-+ RotatedBox
 + Row
 + Stack
 - Table
@@ -73,9 +72,9 @@ Input - 3/0
 - FormField
 - RawKeyboardListener
 
-Interaction models - 10/3
+Interaction models - 10/4
 + AbsorbPointer
-- Dismissible
++ Dismissible
 - DragTarget
 - Draggable
 + GestureDetector
@@ -84,7 +83,7 @@ Interaction models - 10/3
 - Scrollable
 - Navigator
 
-Painting and effects - 10/0
+Painting and effects - 10/1
 - BackdropFilter
 - ClipOval
 - ClipPath
@@ -93,7 +92,7 @@ Painting and effects - 10/0
 - DecoratedBox
 - FractionalTransition
 - Opacity
-- RotatedBox
++ RotatedBox
 - Transform
 
 Scrolling widgets - 9/0
@@ -185,4 +184,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-160/35
+160/37
