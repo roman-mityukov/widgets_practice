@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-// Делает потомка прозрачным. Относительно требователен к производительности
+// Обрезает потомка прямоугольной областью
 // https://api.flutter.dev/flutter/widgets/ClipRect-class.html
 class ClipRectPractice extends StatelessWidget {
   @override

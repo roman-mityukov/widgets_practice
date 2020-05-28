@@ -83,9 +83,9 @@ Interaction models - 9/7
 - Scrollable
 - Navigator
 
-Painting and effects - 10/4
+Painting and effects - 10/5
 + BackdropFilter
-- ClipOval
++ ClipOval
 - ClipPath
 + ClipRect
 - CustomPaint
@@ -183,4 +183,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-159/48
+159/49

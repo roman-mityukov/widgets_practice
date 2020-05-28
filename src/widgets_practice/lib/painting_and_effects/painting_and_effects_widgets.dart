@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetspractice/painting_and_effects/backdrop_filter.dart';
+import 'package:widgetspractice/painting_and_effects/clip_oval.dart';
 import 'package:widgetspractice/painting_and_effects/clip_rect.dart';
 import 'package:widgetspractice/painting_and_effects/opacity.dart';
 
@@ -39,8 +40,14 @@ class PaintingAndEffectsWidgets extends StatelessWidget {
             ),
             _buildButton(
               'ClipRect',
-                  () {
+              () {
                 _navigateTo(ClipRectPractice());
+              },
+            ),
+            _buildButton(
+              'ClipOval',
+              () {
+                _navigateTo(ClipOvalPractice());
               },
             ),
           ],
