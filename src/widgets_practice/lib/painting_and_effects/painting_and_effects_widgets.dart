@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:widgetspractice/painting_and_effects/backdrop_filter.dart';
 import 'package:widgetspractice/painting_and_effects/opacity.dart';
 
 class PaintingAndEffectsWidgets extends StatelessWidget {
@@ -27,6 +28,12 @@ class PaintingAndEffectsWidgets extends StatelessWidget {
               'Opacity',
               () {
                 _navigateTo(OpacityPractice());
+              },
+            ),
+            _buildButton(
+              'BackdropFilter',
+              () {
+                _navigateTo(BackdropFilterPractice());
               },
             ),
           ],
