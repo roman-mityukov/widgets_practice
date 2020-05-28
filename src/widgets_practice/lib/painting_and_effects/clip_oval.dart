@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-// Обрезает потомка область в форме круга
+// Обрезает потомка областью в форме круга
+// https://medium.com/flutter-community/clipping-in-flutter-e9eaa6b1721a
 // https://api.flutter.dev/flutter/widgets/ClipOval-class.html
 class ClipOvalPractice extends StatelessWidget {
   @override

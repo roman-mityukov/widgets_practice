@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 // Обрезает потомка прямоугольной областью
+// https://medium.com/flutter-community/clipping-in-flutter-e9eaa6b1721a
 // https://api.flutter.dev/flutter/widgets/ClipRect-class.html
 class ClipRectPractice extends StatelessWidget {
   @override
