@@ -4,6 +4,7 @@ import 'package:widgetspractice/painting_and_effects/backdrop_filter.dart';
 import 'package:widgetspractice/painting_and_effects/clip_oval.dart';
 import 'package:widgetspractice/painting_and_effects/clip_path.dart';
 import 'package:widgetspractice/painting_and_effects/clip_rect.dart';
+import 'package:widgetspractice/painting_and_effects/decorated_box.dart';
 import 'package:widgetspractice/painting_and_effects/opacity.dart';
 
 class PaintingAndEffectsWidgets extends StatelessWidget {
@@ -55,6 +56,12 @@ class PaintingAndEffectsWidgets extends StatelessWidget {
               'ClipPath',
               () {
                 _navigateTo(ClipPathPractice());
+              },
+            ),
+            _buildButton(
+              'DecoratedBox',
+              () {
+                _navigateTo(DecoratedBoxPractice());
               },
             ),
           ],
