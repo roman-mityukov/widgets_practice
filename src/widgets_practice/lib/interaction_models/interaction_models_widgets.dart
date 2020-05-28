@@ -5,6 +5,7 @@ import 'package:widgetspractice/interaction_models/dismissible.dart';
 import 'package:widgetspractice/interaction_models/draggable_dragtarget.dart';
 import 'package:widgetspractice/interaction_models/gesture_detector.dart';
 import 'package:widgetspractice/interaction_models/ignore_pointer.dart';
+import 'package:widgetspractice/interaction_models/long_press_draggable_dragtarget.dart';
 
 class InteractionModelsWidgets extends StatelessWidget {
   @override
@@ -55,6 +56,12 @@ class InteractionModelsWidgets extends StatelessWidget {
               'Draggable',
               () {
                 _navigateTo(DraggablePractice());
+              },
+            ),
+            _buildButton(
+              'LongPressDraggable',
+              () {
+                _navigateTo(LongPressDraggablePractice());
               },
             ),
           ],

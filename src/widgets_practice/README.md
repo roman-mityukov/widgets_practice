@@ -72,14 +72,14 @@ Input - 3/0
 - FormField
 - RawKeyboardListener
 
-Interaction models - 10/6
+Interaction models - 9/7
 + AbsorbPointer
 + Dismissible
 + DragTarget
 + Draggable
 + GestureDetector
 + IgnorePointer
-- LongPressDraggable
++ LongPressDraggable
 - Scrollable
 - Navigator
 
