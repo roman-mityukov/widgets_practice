@@ -6,6 +6,9 @@ class OpacityPractice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Opacity'),
+      ),
       body: Center(
         child: Opacity(
           opacity: 0.2,

@@ -106,9 +106,8 @@ Scrolling widgets - 9/0
 - Scrollbar
 - SingleChildScrollView
 
-Styling widgets - 3/0
-- MediaQuery
-- Padding
+Styling widgets - 2/1
++ MediaQuery
 - Theme
 
 Text - 3/0
@@ -184,4 +183,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-160/40
+159/40
