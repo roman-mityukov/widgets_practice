@@ -95,7 +95,7 @@ Painting and effects - 10/2
 + RotatedBox
 - Transform
 
-Scrolling widgets - 9/0
+Scrolling widgets - 9/1
 - CustomScrollView
 - NestedScrollView
 - NotificationListener
@@ -104,7 +104,7 @@ Scrolling widgets - 9/0
 - ScrollConfiguration
 - Scrollable
 - Scrollbar
-- SingleChildScrollView
++ SingleChildScrollView
 
 Styling widgets - 2/1
 + MediaQuery
@@ -183,4 +183,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-159/40
+159/43

@@ -6,6 +6,7 @@ import 'package:widgetspractice/async/async_widgets.dart';
 import 'package:widgetspractice/interaction_models/interaction_models_widgets.dart';
 import 'package:widgetspractice/layout/layout_widgets.dart';
 import 'package:widgetspractice/painting_and_effects/painting_and_effects_widgets.dart';
+import 'package:widgetspractice/scrolling/scrolling_widgets.dart';
 import 'package:widgetspractice/styling/styling_widgets.dart';
 
 void main() {
@@ -80,8 +81,14 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             _buildButton(
+              'ScrollingWidgets',
+              () {
+                _navigateTo(ScrollingWidgets());
+              },
+            ),
+            _buildButton(
               'StylingWidgets',
-                  () {
+              () {
                 _navigateTo(StylingWidgets());
               },
             ),
