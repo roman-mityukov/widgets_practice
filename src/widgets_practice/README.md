@@ -95,12 +95,12 @@ Painting and effects - 10/2
 + RotatedBox
 - Transform
 
-Scrolling widgets - 9/3
+Scrolling widgets - 9/4
 - CustomScrollView
 - NestedScrollView
 - NotificationListener
 + PageView
-- RefreshIndicator
++ RefreshIndicator
 - ScrollConfiguration
 - Scrollable
 + Scrollbar
@@ -183,4 +183,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-159/45
+159/46
