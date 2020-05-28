@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetspractice/interaction_models/absorb_pointer.dart';
 import 'package:widgetspractice/interaction_models/dismissible.dart';
+import 'package:widgetspractice/interaction_models/draggable_dragtarget.dart';
 import 'package:widgetspractice/interaction_models/gesture_detector.dart';
 import 'package:widgetspractice/interaction_models/ignore_pointer.dart';
 
@@ -48,6 +49,12 @@ class InteractionModelsWidgets extends StatelessWidget {
               'Dismissible',
               () {
                 _navigateTo(DismissiblePractice());
+              },
+            ),
+            _buildButton(
+              'Draggable',
+              () {
+                _navigateTo(DraggablePractice());
               },
             ),
           ],
