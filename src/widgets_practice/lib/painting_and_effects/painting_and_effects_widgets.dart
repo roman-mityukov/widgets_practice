@@ -7,6 +7,7 @@ import 'package:widgetspractice/painting_and_effects/clip_rect.dart';
 import 'package:widgetspractice/painting_and_effects/custom_paint.dart';
 import 'package:widgetspractice/painting_and_effects/decorated_box.dart';
 import 'package:widgetspractice/painting_and_effects/opacity.dart';
+import 'package:widgetspractice/painting_and_effects/transform.dart';
 
 class PaintingAndEffectsWidgets extends StatelessWidget {
   @override
@@ -69,6 +70,12 @@ class PaintingAndEffectsWidgets extends StatelessWidget {
               'DecoratedBox',
               () {
                 _navigateTo(DecoratedBoxPractice());
+              },
+            ),
+            _buildButton(
+              'Transform',
+              () {
+                _navigateTo(TransformPractice());
               },
             ),
           ],

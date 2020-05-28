@@ -83,7 +83,7 @@ Interaction models - 9/7
 - Scrollable
 - Navigator
 
-Painting and effects - 10/8
+Painting and effects - 10/9
 + BackdropFilter
 + ClipOval
 + ClipPath
@@ -93,7 +93,7 @@ Painting and effects - 10/8
 - FractionalTransition
 + Opacity
 + RotatedBox
-- Transform
++ Transform
 
 Scrolling widgets - 9/4
 - CustomScrollView
