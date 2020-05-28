@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:widgetspractice/scrolling/scrollbar.dart';
 import 'package:widgetspractice/scrolling/single_child_scroll_view.dart';
 
 class ScrollingWidgets extends StatelessWidget {
@@ -27,6 +28,12 @@ class ScrollingWidgets extends StatelessWidget {
               'SingleChildScrollView',
               () {
                 _navigateTo(SingleChildScrollViewPractice());
+              },
+            ),
+            _buildButton(
+              'Scrollbar',
+              () {
+                _navigateTo(ScrollbarPractice());
               },
             ),
           ],
