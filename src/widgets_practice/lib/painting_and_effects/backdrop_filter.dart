@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 // Применяет фильтр к виджетам, которые ниже потомка
 // ImageFiltered применяет фильтр к потомку
 // https://api.flutter.dev/flutter/widgets/BackdropFilter-class.html
-class BackdropFilterPractice extends StatelessWidget {
+class BackdropFilterAndImageFilteredPractice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BackdropFilter'),
+        title: Text('BackdropFilter and ImageFiltered'),
       ),
       body: Stack(
         fit: StackFit.expand,
