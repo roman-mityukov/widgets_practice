@@ -5,6 +5,7 @@ import 'package:widgetspractice/assets_images_icon/assets_images_icon_widgets.da
 import 'package:widgetspractice/async/async_widgets.dart';
 import 'package:widgetspractice/interaction_models/interaction_models_widgets.dart';
 import 'package:widgetspractice/layout/layout_widgets.dart';
+import 'package:widgetspractice/painting_and_effects/painting_and_effects_widgets.dart';
 
 void main() {
   Logger.root.level = Level.ALL;
@@ -69,6 +70,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'InteractionModelsWidgets',
               () {
                 _navigateTo(InteractionModelsWidgets());
+              },
+            ),
+            _buildButton(
+              'PaintingAndEffectsWidgets',
+              () {
+                _navigateTo(PaintingAndEffectsWidgets());
               },
             ),
           ],
