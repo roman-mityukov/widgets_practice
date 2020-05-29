@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:widgetspractice/material/checkbox.dart';
 import 'package:widgetspractice/material/data_table.dart';
 
 class MaterialWidgets extends StatelessWidget {
@@ -23,6 +24,12 @@ class MaterialWidgets extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            _buildButton(
+              'Checkbox',
+              () {
+                _navigateTo(CheckboxPractice());
+              },
+            ),
             _buildButton(
               'DataTable',
               () {
