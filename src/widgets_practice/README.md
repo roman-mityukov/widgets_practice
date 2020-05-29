@@ -5,7 +5,7 @@ Accessibility - 3/0
 - MergeSemantics
 - ExcludeSemantics
 
-Layout - 31/28
+Layout - 30/28
 + Align
 + AspectRatio
 + Baseline
@@ -35,7 +35,6 @@ Layout - 31/28
 + Row
 + Stack
 + Table
-- DataTable
 + Wrap
 
 Assets, images, and icon widgets - 4/3
@@ -115,7 +114,7 @@ Text - 3/0
 - RichText
 - Text
 
-Material - 37/0
+Material - 37/1
 - Appbar
 - BottomNavigationBar
 - Drawer
@@ -147,7 +146,7 @@ Material - 37/0
 - Card
 - Chip
 - CircularProgressIndicator
-- DataTable
++ DataTable
 - GridView
 - Icon
 - Image
@@ -183,4 +182,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-159/53
+157/55

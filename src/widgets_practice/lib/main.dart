@@ -5,6 +5,7 @@ import 'package:widgetspractice/assets_images_icon/assets_images_icon_widgets.da
 import 'package:widgetspractice/async/async_widgets.dart';
 import 'package:widgetspractice/interaction_models/interaction_models_widgets.dart';
 import 'package:widgetspractice/layout/layout_widgets.dart';
+import 'package:widgetspractice/material/material_widgets.dart';
 import 'package:widgetspractice/painting_and_effects/painting_and_effects_widgets.dart';
 import 'package:widgetspractice/scrolling/scrolling_widgets.dart';
 import 'package:widgetspractice/styling/styling_widgets.dart';
@@ -90,6 +91,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'StylingWidgets',
               () {
                 _navigateTo(StylingWidgets());
+              },
+            ),
+            _buildButton(
+              'MaterialWidgets',
+              () {
+                _navigateTo(MaterialWidgets());
               },
             ),
           ],
