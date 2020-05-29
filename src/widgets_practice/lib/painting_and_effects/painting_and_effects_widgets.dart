@@ -24,7 +24,7 @@ class PaintingAndEffectsWidgets extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Interaction models widgets'),
+        title: Text('Painting and effects widgets'),
       ),
       body: SingleChildScrollView(
         child: Column(
