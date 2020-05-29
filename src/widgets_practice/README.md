@@ -5,7 +5,7 @@ Accessibility - 3/0
 - MergeSemantics
 - ExcludeSemantics
 
-Layout - 31/27
+Layout - 31/28
 + Align
 + AspectRatio
 + Baseline
@@ -24,7 +24,6 @@ Layout - 31/27
 + Padding
 + SizedBox
 + SizedBoxOverflow
-- Transform
 + Column
 - CustomMultiChildLayout
 + Flow
@@ -35,7 +34,8 @@ Layout - 31/27
 + ListView
 + Row
 + Stack
-- Table
++ Table
+- DataTable
 + Wrap
 
 Assets, images, and icon widgets - 4/3

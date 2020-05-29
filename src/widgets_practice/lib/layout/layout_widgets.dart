@@ -10,6 +10,7 @@ import 'package:widgetspractice/layout/rotated_box.dart';
 import 'package:widgetspractice/layout/sized_box.dart';
 import 'package:widgetspractice/layout/sized_overflow_box.dart';
 import 'package:widgetspractice/layout/stack.dart';
+import 'package:widgetspractice/layout/table.dart';
 import 'package:widgetspractice/layout/wrap.dart';
 
 import 'align.dart';
@@ -240,6 +241,12 @@ class LayoutWidgets extends StatelessWidget {
               'SizedOverflowBox',
               () {
                 _navigateTo(SizedOverflowBoxPractice());
+              },
+            ),
+            _buildButton(
+              'Table',
+              () {
+                _navigateTo(TablePractice());
               },
             ),
             _buildButton(
