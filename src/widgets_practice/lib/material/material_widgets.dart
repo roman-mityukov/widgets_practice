@@ -7,6 +7,7 @@ import 'package:widgetspractice/material/circularprogressindicator.dart';
 import 'package:widgetspractice/material/data_table.dart';
 import 'package:widgetspractice/material/flat_button.dart';
 import 'package:widgetspractice/material/icon_button.dart';
+import 'package:widgetspractice/material/outline_button.dart';
 import 'package:widgetspractice/material/radio.dart';
 import 'package:widgetspractice/material/slider.dart';
 import 'package:widgetspractice/material/switch.dart';
@@ -80,6 +81,12 @@ class MaterialWidgets extends StatelessWidget {
               'LinearProgressIndicator',
               () {
                 _navigateTo(LinearProgressIndicatorPractice());
+              },
+            ),
+            _buildButton(
+              'OutlineButton',
+                  () {
+                _navigateTo(OutlineButtonPractice());
               },
             ),
             _buildButton(

@@ -8,7 +8,7 @@ class FlatButtonPractice extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Card'),
+        title: Text('Flat Button'),
         elevation: 0,
       ),
       body: Center(
@@ -19,6 +19,11 @@ class FlatButtonPractice extends StatelessWidget {
               onPressed: () {
                 /*...*/
               },
+              child: Text(
+                "Flat Button",
+              ),
+            ),
+            FlatButton(
               child: Text(
                 "Flat Button",
               ),

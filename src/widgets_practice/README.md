@@ -114,7 +114,7 @@ Text - 3/0
 - RichText
 - Text
 
-Material - 34/11
+Material - 34/12
 + Appbar
 - BottomNavigationBar
 - Drawer
@@ -129,7 +129,7 @@ Material - 34/11
 + FlatButton
 - FloatingActionButton
 + IconButton
-- OutlineButton
++ OutlineButton
 - PopupMenuButton
 - RaisedButton
 + Checkbox
@@ -179,4 +179,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-154/67
+154/68
