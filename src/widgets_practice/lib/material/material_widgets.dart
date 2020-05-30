@@ -5,6 +5,8 @@ import 'package:widgetspractice/material/checkbox.dart';
 import 'package:widgetspractice/material/circularprogressindicator.dart';
 import 'package:widgetspractice/material/data_table.dart';
 
+import 'linear_progress_indicator.dart';
+
 class MaterialWidgets extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -48,6 +50,12 @@ class MaterialWidgets extends StatelessWidget {
               'DataTable',
               () {
                 _navigateTo(DataTablePractice());
+              },
+            ),
+            _buildButton(
+              'LinearProgressIndicator',
+              () {
+                _navigateTo(LinearProgressIndicatorPractice());
               },
             ),
           ],

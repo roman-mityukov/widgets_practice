@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 
 // https://www.youtube.com/watch?v=O-rhXZLtpv0
 // https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html
-class CircularProgressIndicatorPractice extends StatefulWidget {
+class LinearProgressIndicatorPractice extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return _StateCircularProgressIndicatorPractice();
+    return _StateLinearProgressIndicatorPractice();
   }
 }
 
-class _StateCircularProgressIndicatorPractice
-    extends State<CircularProgressIndicatorPractice>
+class _StateLinearProgressIndicatorPractice
+    extends State<LinearProgressIndicatorPractice>
     with SingleTickerProviderStateMixin {
   AnimationController _animationController;
   Animation<Color> _colorAnimation;
@@ -42,36 +42,27 @@ class _StateCircularProgressIndicatorPractice
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('CircularProgressIndicator'),
+        title: Text('LinearProgressIndicator'),
       ),
       body: Padding(
         padding: EdgeInsets.all(16),
-        child: GridView(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 3,
-            mainAxisSpacing: 24,
-            crossAxisSpacing: 24,
-          ),
+        child: Column(
           children: <Widget>[
-            Center(
-              child: CircularProgressIndicator(
-                backgroundColor: Colors.red,
-              ),
+            LinearProgressIndicator(
+              backgroundColor: Colors.red,
             ),
-            Center(
-              child: CircularProgressIndicator(
-                strokeWidth: 1,
-              ),
+            SizedBox(height: 24,),
+            SizedBox(
+              height: 24,
+              child: LinearProgressIndicator(),
             ),
-            Center(
-              child: CircularProgressIndicator(
-                valueColor: _colorAnimation,
-              ),
+            SizedBox(height: 24,),
+            LinearProgressIndicator(
+              valueColor: _colorAnimation,
             ),
-            Center(
-              child: CircularProgressIndicator(
-                value: 0.5,
-              ),
+            SizedBox(height: 24,),
+            LinearProgressIndicator(
+              value: 0.5,
             )
           ],
         ),

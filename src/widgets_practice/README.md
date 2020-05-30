@@ -114,7 +114,7 @@ Text - 3/0
 - RichText
 - Text
 
-Material - 37/4
+Material - 37/5
 + Appbar
 - BottomNavigationBar
 - Drawer
@@ -150,7 +150,7 @@ Material - 37/4
 - GridView
 - Icon
 - Image
-- LinearProgressIndicator
++ LinearProgressIndicator
 - Tooltip
 - Divider
 - ListTile
@@ -182,4 +182,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-157/60
+157/61
