@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:widgetspractice/material/appbar.dart';
 import 'package:widgetspractice/material/checkbox.dart';
 import 'package:widgetspractice/material/data_table.dart';
 
@@ -18,12 +19,18 @@ class MaterialWidgets extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Painting and effects widgets'),
+        title: Text('Material widgets'),
       ),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            _buildButton(
+              'AppBar',
+              () {
+                _navigateTo(AppBarPractice());
+              },
+            ),
             _buildButton(
               'Checkbox',
               () {
