@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetspractice/material/appbar.dart';
 import 'package:widgetspractice/material/checkbox.dart';
+import 'package:widgetspractice/material/circularprogressindicator.dart';
 import 'package:widgetspractice/material/data_table.dart';
 
 class MaterialWidgets extends StatelessWidget {
@@ -35,6 +36,12 @@ class MaterialWidgets extends StatelessWidget {
               'Checkbox',
               () {
                 _navigateTo(CheckboxPractice());
+              },
+            ),
+            _buildButton(
+              'CircularProgressIndicator',
+              () {
+                _navigateTo(CircularProgressIndicatorPractice());
               },
             ),
             _buildButton(
