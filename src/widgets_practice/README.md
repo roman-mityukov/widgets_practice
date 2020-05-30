@@ -114,7 +114,7 @@ Text - 3/0
 - RichText
 - Text
 
-Material - 37/5
+Material - 34/6
 + Appbar
 - BottomNavigationBar
 - Drawer
@@ -136,7 +136,7 @@ Material - 37/5
 - DateTimePickers
 - Radio
 - Slider
-- Switch
++ Switch
 - TextField
 - AlertDialog
 - BottomSheet
@@ -147,9 +147,6 @@ Material - 37/5
 - Chip
 + CircularProgressIndicator
 + DataTable
-- GridView
-- Icon
-- Image
 + LinearProgressIndicator
 - Tooltip
 - Divider
@@ -182,4 +179,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-157/61
+154/62
