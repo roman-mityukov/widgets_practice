@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetspractice/material/appbar.dart';
+import 'package:widgetspractice/material/card.dart';
 import 'package:widgetspractice/material/checkbox.dart';
 import 'package:widgetspractice/material/circularprogressindicator.dart';
 import 'package:widgetspractice/material/data_table.dart';
@@ -36,6 +37,12 @@ class MaterialWidgets extends StatelessWidget {
               'AppBar',
               () {
                 _navigateTo(AppBarPractice());
+              },
+            ),
+            _buildButton(
+              'Card',
+                  () {
+                _navigateTo(CardPractice());
               },
             ),
             _buildButton(
