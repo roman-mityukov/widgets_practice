@@ -114,7 +114,7 @@ Text - 3/0
 - RichText
 - Text
 
-Material - 34/6
+Material - 34/7
 + Appbar
 - BottomNavigationBar
 - Drawer
@@ -135,7 +135,7 @@ Material - 34/6
 + Checkbox
 - DateTimePickers
 - Radio
-- Slider
++ Slider
 + Switch
 - TextField
 - AlertDialog
@@ -179,4 +179,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-154/62
+154/63

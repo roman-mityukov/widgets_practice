@@ -4,6 +4,7 @@ import 'package:widgetspractice/material/appbar.dart';
 import 'package:widgetspractice/material/checkbox.dart';
 import 'package:widgetspractice/material/circularprogressindicator.dart';
 import 'package:widgetspractice/material/data_table.dart';
+import 'package:widgetspractice/material/slider.dart';
 import 'package:widgetspractice/material/switch.dart';
 
 import 'linear_progress_indicator.dart';
@@ -60,8 +61,14 @@ class MaterialWidgets extends StatelessWidget {
               },
             ),
             _buildButton(
+              'SliderPractice',
+              () {
+                _navigateTo(SliderPractice());
+              },
+            ),
+            _buildButton(
               'SwitchPractice',
-                  () {
+              () {
                 _navigateTo(SwitchPractice());
               },
             ),
