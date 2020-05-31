@@ -12,6 +12,7 @@ import 'package:widgetspractice/material/outline_button.dart';
 import 'package:widgetspractice/material/radio.dart';
 import 'package:widgetspractice/material/slider.dart';
 import 'package:widgetspractice/material/switch.dart';
+import 'package:widgetspractice/material/tabbar_and_tabbarview.dart';
 import 'package:widgetspractice/material/tooltip.dart';
 
 import 'linear_progress_indicator.dart';
@@ -113,6 +114,12 @@ class MaterialWidgets extends StatelessWidget {
               'Switch',
               () {
                 _navigateTo(SwitchPractice());
+              },
+            ),
+            _buildButton(
+              'TabBar and TabBarView',
+                  () {
+                _navigateTo(TabBarPractice());
               },
             ),
             _buildButton(
