@@ -114,7 +114,7 @@ Text - 3/0
 - RichText
 - Text
 
-Material - 34/12
+Material - 34/13
 + Appbar
 - BottomNavigationBar
 - Drawer
@@ -148,7 +148,7 @@ Material - 34/12
 + CircularProgressIndicator
 + DataTable
 + LinearProgressIndicator
-- Tooltip
++ Tooltip
 - Divider
 - ListTile
 - Stepper
@@ -179,4 +179,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-154/68
+154/69

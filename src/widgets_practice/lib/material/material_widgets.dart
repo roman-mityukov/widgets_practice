@@ -11,6 +11,7 @@ import 'package:widgetspractice/material/outline_button.dart';
 import 'package:widgetspractice/material/radio.dart';
 import 'package:widgetspractice/material/slider.dart';
 import 'package:widgetspractice/material/switch.dart';
+import 'package:widgetspractice/material/tooltip.dart';
 
 import 'linear_progress_indicator.dart';
 
@@ -85,7 +86,7 @@ class MaterialWidgets extends StatelessWidget {
             ),
             _buildButton(
               'OutlineButton',
-                  () {
+              () {
                 _navigateTo(OutlineButtonPractice());
               },
             ),
@@ -96,15 +97,21 @@ class MaterialWidgets extends StatelessWidget {
               },
             ),
             _buildButton(
-              'SliderPractice',
+              'Slider',
               () {
                 _navigateTo(SliderPractice());
               },
             ),
             _buildButton(
-              'SwitchPractice',
+              'Switch',
               () {
                 _navigateTo(SwitchPractice());
+              },
+            ),
+            _buildButton(
+              'Tooltip',
+              () {
+                _navigateTo(TooltipPractice());
               },
             ),
           ],
