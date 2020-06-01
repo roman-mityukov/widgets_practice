@@ -9,6 +9,7 @@ import 'package:widgetspractice/material/data_table.dart';
 import 'package:widgetspractice/material/flat_button.dart';
 import 'package:widgetspractice/material/icon_button.dart';
 import 'package:widgetspractice/material/outline_button.dart';
+import 'package:widgetspractice/material/popup_menu_button.dart';
 import 'package:widgetspractice/material/radio.dart';
 import 'package:widgetspractice/material/raised_button.dart';
 import 'package:widgetspractice/material/slider.dart';
@@ -97,6 +98,12 @@ class MaterialWidgets extends StatelessWidget {
               'OutlineButton',
               () {
                 _navigateTo(OutlineButtonPractice());
+              },
+            ),
+            _buildButton(
+              'PopupMenuButton',
+              () {
+                _navigateTo(PopupMenuButtonPractice());
               },
             ),
             _buildButton(
