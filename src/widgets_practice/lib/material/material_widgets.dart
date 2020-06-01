@@ -10,6 +10,7 @@ import 'package:widgetspractice/material/flat_button.dart';
 import 'package:widgetspractice/material/icon_button.dart';
 import 'package:widgetspractice/material/outline_button.dart';
 import 'package:widgetspractice/material/radio.dart';
+import 'package:widgetspractice/material/raised_button.dart';
 import 'package:widgetspractice/material/slider.dart';
 import 'package:widgetspractice/material/switch.dart';
 import 'package:widgetspractice/material/tabbar_and_tabbarview.dart';
@@ -105,6 +106,12 @@ class MaterialWidgets extends StatelessWidget {
               },
             ),
             _buildButton(
+              'RaisedButton',
+              () {
+                _navigateTo(RaisedButtonPractice());
+              },
+            ),
+            _buildButton(
               'Slider',
               () {
                 _navigateTo(SliderPractice());
@@ -118,7 +125,7 @@ class MaterialWidgets extends StatelessWidget {
             ),
             _buildButton(
               'TabBar and TabBarView',
-                  () {
+              () {
                 _navigateTo(TabBarPractice());
               },
             ),
