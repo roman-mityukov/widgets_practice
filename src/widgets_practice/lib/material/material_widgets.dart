@@ -16,6 +16,7 @@ import 'package:widgetspractice/material/radio.dart';
 import 'package:widgetspractice/material/raised_button.dart';
 import 'package:widgetspractice/material/slider.dart';
 import 'package:widgetspractice/material/snackbar.dart';
+import 'package:widgetspractice/material/stepper.dart';
 import 'package:widgetspractice/material/switch.dart';
 import 'package:widgetspractice/material/tabbar_and_tabbarview.dart';
 import 'package:widgetspractice/material/tooltip.dart';
@@ -143,6 +144,12 @@ class MaterialWidgets extends StatelessWidget {
               'SnackBar',
               () {
                 _navigateTo(SnackBarPractice());
+              },
+            ),
+            _buildButton(
+              'Stepper',
+              () {
+                _navigateTo(StepperPractice());
               },
             ),
             _buildButton(

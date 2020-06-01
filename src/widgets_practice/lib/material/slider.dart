@@ -20,7 +20,7 @@ class _StateSliderPractice extends State<SliderPractice> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Switch'),
+        title: Text('Slider'),
       ),
       body: Center(
         child: Column(
