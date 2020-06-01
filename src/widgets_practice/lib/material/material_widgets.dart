@@ -9,6 +9,7 @@ import 'package:widgetspractice/material/data_table.dart';
 import 'package:widgetspractice/material/dropdown_button.dart';
 import 'package:widgetspractice/material/flat_button.dart';
 import 'package:widgetspractice/material/icon_button.dart';
+import 'package:widgetspractice/material/list_tile.dart';
 import 'package:widgetspractice/material/outline_button.dart';
 import 'package:widgetspractice/material/popup_menu_button.dart';
 import 'package:widgetspractice/material/radio.dart';
@@ -99,6 +100,12 @@ class MaterialWidgets extends StatelessWidget {
               'LinearProgressIndicator',
               () {
                 _navigateTo(LinearProgressIndicatorPractice());
+              },
+            ),
+            _buildButton(
+              'ListTile',
+                  () {
+                _navigateTo(ListTilePractice());
               },
             ),
             _buildButton(
