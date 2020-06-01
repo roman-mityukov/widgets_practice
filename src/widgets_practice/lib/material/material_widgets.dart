@@ -6,6 +6,7 @@ import 'package:widgetspractice/material/card.dart';
 import 'package:widgetspractice/material/checkbox.dart';
 import 'package:widgetspractice/material/circularprogressindicator.dart';
 import 'package:widgetspractice/material/data_table.dart';
+import 'package:widgetspractice/material/dropdown_button.dart';
 import 'package:widgetspractice/material/flat_button.dart';
 import 'package:widgetspractice/material/icon_button.dart';
 import 'package:widgetspractice/material/outline_button.dart';
@@ -74,6 +75,12 @@ class MaterialWidgets extends StatelessWidget {
               'DataTable',
               () {
                 _navigateTo(DataTablePractice());
+              },
+            ),
+            _buildButton(
+              'DropdownButton',
+                  () {
+                _navigateTo(DropdownButtonPractice());
               },
             ),
             _buildButton(
