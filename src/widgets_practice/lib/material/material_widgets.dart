@@ -4,6 +4,7 @@ import 'package:widgetspractice/material/appbar.dart';
 import 'package:widgetspractice/material/button_bar.dart';
 import 'package:widgetspractice/material/card.dart';
 import 'package:widgetspractice/material/checkbox.dart';
+import 'package:widgetspractice/material/chip.dart';
 import 'package:widgetspractice/material/circularprogressindicator.dart';
 import 'package:widgetspractice/material/data_table.dart';
 import 'package:widgetspractice/material/dropdown_button.dart';
@@ -66,6 +67,12 @@ class MaterialWidgets extends StatelessWidget {
               'Checkbox',
               () {
                 _navigateTo(CheckboxPractice());
+              },
+            ),
+            _buildButton(
+              'Chip',
+              () {
+                _navigateTo(ChipPractice());
               },
             ),
             _buildButton(
