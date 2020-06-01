@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:widgetspractice/material/alert_dialog.dart';
 import 'package:widgetspractice/material/appbar.dart';
 import 'package:widgetspractice/material/button_bar.dart';
 import 'package:widgetspractice/material/card.dart';
@@ -46,6 +47,12 @@ class MaterialWidgets extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            _buildButton(
+              'AlertDialog',
+              () {
+                _navigateTo(AlertDialogPractice());
+              },
+            ),
             _buildButton(
               'AppBar',
               () {

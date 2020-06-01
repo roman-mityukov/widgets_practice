@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-// Предлагает пользователю сделать выбор из нескольких вариантов.
-// https://api.flutter.dev/flutter/material/SimpleDialog-class.html
-class SimpleDialogPractice extends StatelessWidget {
+// Требует от пользователя действия
+// https://api.flutter.dev/flutter/material/AlertDialog-class.html
+class AlertDialogPractice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('SimpleDialog'),
+        title: Text('AlertDialog'),
         elevation: 0,
       ),
       body: Center(
@@ -18,20 +18,28 @@ class SimpleDialogPractice extends StatelessWidget {
             showDialog(
               context: context,
               builder: (context) {
-                return SimpleDialog(
+                return AlertDialog(
                   title: const Text('Select assignment'),
-                  children: <Widget>[
+                  content: SingleChildScrollView(
+                    child: ListBody(
+                      children: <Widget>[
+                        Text('This is a demo alert dialog.'),
+                        Text('Would you like to approve of this message?'),
+                      ],
+                    ),
+                  ),
+                  actions: <Widget>[
                     SimpleDialogOption(
                       onPressed: () {
                         Navigator.pop(context, true);
                       },
-                      child: const Text('Treasury department'),
+                      child: const Text('Treasury'),
                     ),
                     SimpleDialogOption(
                       onPressed: () {
                         Navigator.pop(context, false);
                       },
-                      child: const Text('State department'),
+                      child: const Text('State'),
                     ),
                   ],
                 );
