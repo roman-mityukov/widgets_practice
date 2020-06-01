@@ -114,7 +114,7 @@ Text - 3/0
 - RichText
 - Text
 
-Material - 34/20
+Material - 34/21
 + Appbar
 - BottomNavigationBar
 - Drawer
@@ -142,7 +142,7 @@ Material - 34/20
 - BottomSheet
 - ExpansionPanel
 - SimpleDialog
-- SnackBar
++ SnackBar
 + Card
 - Chip
 + CircularProgressIndicator
@@ -179,4 +179,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-154/76
+154/77

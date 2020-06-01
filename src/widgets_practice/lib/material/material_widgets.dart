@@ -15,6 +15,7 @@ import 'package:widgetspractice/material/popup_menu_button.dart';
 import 'package:widgetspractice/material/radio.dart';
 import 'package:widgetspractice/material/raised_button.dart';
 import 'package:widgetspractice/material/slider.dart';
+import 'package:widgetspractice/material/snackbar.dart';
 import 'package:widgetspractice/material/switch.dart';
 import 'package:widgetspractice/material/tabbar_and_tabbarview.dart';
 import 'package:widgetspractice/material/tooltip.dart';
@@ -80,7 +81,7 @@ class MaterialWidgets extends StatelessWidget {
             ),
             _buildButton(
               'DropdownButton',
-                  () {
+              () {
                 _navigateTo(DropdownButtonPractice());
               },
             ),
@@ -104,7 +105,7 @@ class MaterialWidgets extends StatelessWidget {
             ),
             _buildButton(
               'ListTile',
-                  () {
+              () {
                 _navigateTo(ListTilePractice());
               },
             ),
@@ -136,6 +137,12 @@ class MaterialWidgets extends StatelessWidget {
               'Slider',
               () {
                 _navigateTo(SliderPractice());
+              },
+            ),
+            _buildButton(
+              'SnackBar',
+              () {
+                _navigateTo(SnackBarPractice());
               },
             ),
             _buildButton(
