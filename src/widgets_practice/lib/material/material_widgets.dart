@@ -8,6 +8,7 @@ import 'package:widgetspractice/material/checkbox.dart';
 import 'package:widgetspractice/material/chip.dart';
 import 'package:widgetspractice/material/circularprogressindicator.dart';
 import 'package:widgetspractice/material/data_table.dart';
+import 'package:widgetspractice/material/divider.dart';
 import 'package:widgetspractice/material/dropdown_button.dart';
 import 'package:widgetspractice/material/flat_button.dart';
 import 'package:widgetspractice/material/icon_button.dart';
@@ -93,6 +94,12 @@ class MaterialWidgets extends StatelessWidget {
               'DataTable',
               () {
                 _navigateTo(DataTablePractice());
+              },
+            ),
+            _buildButton(
+              'Divider',
+              () {
+                _navigateTo(DividerPractice());
               },
             ),
             _buildButton(
