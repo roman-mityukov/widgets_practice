@@ -10,6 +10,7 @@ import 'package:widgetspractice/material/circularprogressindicator.dart';
 import 'package:widgetspractice/material/data_table.dart';
 import 'package:widgetspractice/material/divider.dart';
 import 'package:widgetspractice/material/dropdown_button.dart';
+import 'package:widgetspractice/material/expansion_panel_list.dart';
 import 'package:widgetspractice/material/flat_button.dart';
 import 'package:widgetspractice/material/icon_button.dart';
 import 'package:widgetspractice/material/list_tile.dart';
@@ -106,6 +107,12 @@ class MaterialWidgets extends StatelessWidget {
               'DropdownButton',
               () {
                 _navigateTo(DropdownButtonPractice());
+              },
+            ),
+            _buildButton(
+              'ExpansionPanelList',
+              () {
+                _navigateTo(ExpansionPanelListPractice());
               },
             ),
             _buildButton(
