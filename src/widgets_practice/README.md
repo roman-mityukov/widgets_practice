@@ -114,7 +114,7 @@ Text - 3/0
 - RichText
 - Text
 
-Material - 34/23
+Material - 34/24
 + Appbar
 - BottomNavigationBar
 - Drawer
@@ -141,7 +141,7 @@ Material - 34/23
 - AlertDialog
 - BottomSheet
 - ExpansionPanel
-- SimpleDialog
++ SimpleDialog
 + SnackBar
 + Card
 + Chip
@@ -179,4 +179,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-154/79
+154/80
