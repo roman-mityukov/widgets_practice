@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetspractice/material/alert_dialog.dart';
 import 'package:widgetspractice/material/appbar.dart';
+import 'package:widgetspractice/material/bottom_navigation_bar.dart';
 import 'package:widgetspractice/material/button_bar.dart';
 import 'package:widgetspractice/material/card.dart';
 import 'package:widgetspractice/material/checkbox.dart';
@@ -59,6 +60,12 @@ class MaterialWidgets extends StatelessWidget {
               'AppBar',
               () {
                 _navigateTo(AppBarPractice());
+              },
+            ),
+            _buildButton(
+              'BottomNavigationBar',
+              () {
+                _navigateTo(BottomNavigationBarPractice());
               },
             ),
             _buildButton(
