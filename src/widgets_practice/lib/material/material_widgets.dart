@@ -14,6 +14,7 @@ import 'package:widgetspractice/material/divider.dart';
 import 'package:widgetspractice/material/dropdown_button.dart';
 import 'package:widgetspractice/material/expansion_panel_list.dart';
 import 'package:widgetspractice/material/flat_button.dart';
+import 'package:widgetspractice/material/floating_action_button.dart';
 import 'package:widgetspractice/material/icon_button.dart';
 import 'package:widgetspractice/material/list_tile.dart';
 import 'package:widgetspractice/material/outline_button.dart';
@@ -133,6 +134,12 @@ class MaterialWidgets extends StatelessWidget {
               'FlatButton',
               () {
                 _navigateTo(FlatButtonPractice());
+              },
+            ),
+            _buildButton(
+              'FloatingActionButton',
+              () {
+                _navigateTo(FloatingActionButtonPractice());
               },
             ),
             _buildButton(
