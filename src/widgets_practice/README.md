@@ -43,8 +43,8 @@ Assets, images, and icon widgets - 4/3
 + Image
 - RawImage
 
-Animations - 21/0
-- AnimatedBuilder
+Animations - 21/1
++ AnimatedBuilder
 - AnimatedContainer
 - AnimatedCrossFade
 - AnimatedDefaultTextStyle
@@ -114,7 +114,7 @@ Text - 3/0
 - RichText
 - Text
 
-Material - 34/27
+Material - 37/27
 + Appbar
 - BottomNavigationBar
 - Drawer
@@ -179,4 +179,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-154/83
+157/84

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
+import 'package:widgetspractice/animations/animations_widgets.dart';
 import 'package:widgetspractice/assets_images_icon/assets_images_icon_widgets.dart';
 import 'package:widgetspractice/async/async_widgets.dart';
 import 'package:widgetspractice/interaction_models/interaction_models_widgets.dart';
@@ -54,49 +55,55 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             _buildButton(
-              'LayoutWidgets',
-              () {
-                _navigateTo(LayoutWidgets());
+              'Animations',
+                  () {
+                _navigateTo(AnimationsWidgets());
               },
             ),
             _buildButton(
-              'AssetsImagesIconWidgets',
+              'AssetsImagesIcon',
               () {
                 _navigateTo(AssetsImagesIconWidgets());
               },
             ),
             _buildButton(
-              'AsyncWidgets',
+              'Async',
               () {
                 _navigateTo(AsyncWidgets());
               },
             ),
             _buildButton(
-              'InteractionModelsWidgets',
+              'InteractionModels',
               () {
                 _navigateTo(InteractionModelsWidgets());
               },
             ),
             _buildButton(
-              'PaintingAndEffectsWidgets',
+              'Layout',
+                  () {
+                _navigateTo(LayoutWidgets());
+              },
+            ),
+            _buildButton(
+              'PaintingAndEffects',
               () {
                 _navigateTo(PaintingAndEffectsWidgets());
               },
             ),
             _buildButton(
-              'ScrollingWidgets',
+              'Scrolling',
               () {
                 _navigateTo(ScrollingWidgets());
               },
             ),
             _buildButton(
-              'StylingWidgets',
+              'Styling',
               () {
                 _navigateTo(StylingWidgets());
               },
             ),
             _buildButton(
-              'MaterialWidgets',
+              'Material',
               () {
                 _navigateTo(MaterialWidgets());
               },
