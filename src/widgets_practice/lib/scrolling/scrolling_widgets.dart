@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:widgetspractice/scrolling/custom_scroll_view.dart';
 import 'package:widgetspractice/scrolling/page_view.dart';
 import 'package:widgetspractice/scrolling/refresh_indicator.dart';
 import 'package:widgetspractice/scrolling/scrollbar.dart';
@@ -26,6 +27,12 @@ class ScrollingWidgets extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            _buildButton(
+              'CustomScrollView',
+              () {
+                _navigateTo(CustomScrollViewPractice());
+              },
+            ),
             _buildButton(
               'SingleChildScrollView',
               () {

@@ -94,8 +94,8 @@ Painting and effects - 10/9
 + RotatedBox
 + Transform
 
-Scrolling widgets - 9/4
-- CustomScrollView
+Scrolling widgets - 9/5
++ CustomScrollView
 - NestedScrollView
 - NotificationListener
 + PageView
@@ -114,13 +114,13 @@ Text - 3/0
 - RichText
 - Text
 
-Material - 37/33
+Material - 37/34
 + Appbar
 + BottomNavigationBar
 + Drawer
 - MaterialApp
 + Scaffold
-- SliverAppBar
++ SliverAppBar
 + TabBar
 + TabBarView
 - WidgetsApp
@@ -179,4 +179,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-157/90
+157/92
