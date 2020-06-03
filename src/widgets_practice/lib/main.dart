@@ -10,6 +10,7 @@ import 'package:widgetspractice/material/material_widgets.dart';
 import 'package:widgetspractice/painting_and_effects/painting_and_effects_widgets.dart';
 import 'package:widgetspractice/scrolling/scrolling_widgets.dart';
 import 'package:widgetspractice/styling/styling_widgets.dart';
+import 'package:widgetspractice/text/text_widgets.dart';
 
 void main() {
   Logger.root.level = Level.ALL;
@@ -85,6 +86,12 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             _buildButton(
+              'Material',
+                  () {
+                _navigateTo(MaterialWidgets());
+              },
+            ),
+            _buildButton(
               'PaintingAndEffects',
               () {
                 _navigateTo(PaintingAndEffectsWidgets());
@@ -103,9 +110,9 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             _buildButton(
-              'Material',
-              () {
-                _navigateTo(MaterialWidgets());
+              'Text',
+                  () {
+                _navigateTo(TextWidgets());
               },
             ),
           ],
