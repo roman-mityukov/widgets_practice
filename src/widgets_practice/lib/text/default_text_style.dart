@@ -10,7 +10,7 @@ class DefaultTextStylePractice extends StatelessWidget {
         title: Text('DefaultTextStyle'),
       ),
       body: DefaultTextStyle(
-        style: (TextStyle(color: Colors.red)),
+        style: TextStyle(color: Colors.red),
         child: Column(
           children: <Widget>[
             Text('Hello world'),

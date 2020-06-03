@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:widgetspractice/animations/animated_builder.dart';
 import 'package:widgetspractice/animations/animated_container.dart';
 import 'package:widgetspractice/animations/animated_cross_fade.dart';
+import 'package:widgetspractice/animations/animated_default_text_style.dart';
 import 'package:widgetspractice/animations/animated_opacity.dart';
 
 class AnimationsWidgets extends StatelessWidget {
@@ -36,6 +37,12 @@ class AnimationsWidgets extends StatelessWidget {
               'AnimatedContainer',
               () {
                 _navigateTo(AnimatedContainerPractice());
+              },
+            ),
+            _buildButton(
+              'AnimatedDefaultTextStyle',
+              () {
+                _navigateTo(AnimatedDefaultTextStylePractice());
               },
             ),
             _buildButton(

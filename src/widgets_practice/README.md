@@ -43,11 +43,11 @@ Assets, images, and icon widgets - 4/3
 + Image
 - RawImage
 
-Animations - 21/4
+Animations - 21/5
 + AnimatedBuilder
 + AnimatedContainer
 + AnimatedCrossFade
-- AnimatedDefaultTextStyle
++ AnimatedDefaultTextStyle
 - AnimatedListState
 - AnimatedModalBarrier
 + AnimatedOpacity
@@ -178,4 +178,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-156/96
+156/97
