@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetspractice/animations/animated_builder.dart';
 import 'package:widgetspractice/animations/animated_container.dart';
+import 'package:widgetspractice/animations/animated_cross_fade.dart';
 
 class AnimationsWidgets extends StatelessWidget {
   @override
@@ -34,6 +35,12 @@ class AnimationsWidgets extends StatelessWidget {
               'AnimatedContainer',
               () {
                 _navigateTo(AnimatedContainerPractice());
+              },
+            ),
+            _buildButton(
+              'AnimatedCrossFade',
+              () {
+                _navigateTo(AnimatedCrossFadePractice());
               },
             ),
           ],
