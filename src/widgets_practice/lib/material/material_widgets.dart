@@ -29,6 +29,7 @@ import 'package:widgetspractice/material/snackbar.dart';
 import 'package:widgetspractice/material/stepper.dart';
 import 'package:widgetspractice/material/switch.dart';
 import 'package:widgetspractice/material/tabbar_and_tabbarview.dart';
+import 'package:widgetspractice/material/text_field.dart';
 import 'package:widgetspractice/material/tooltip.dart';
 
 import 'linear_progress_indicator.dart';
@@ -232,6 +233,12 @@ class MaterialWidgets extends StatelessWidget {
               'TabBar and TabBarView',
               () {
                 _navigateTo(TabBarPractice());
+              },
+            ),
+            _buildButton(
+              'TextField',
+                  () {
+                _navigateTo(TextFieldPractice());
               },
             ),
             _buildButton(
