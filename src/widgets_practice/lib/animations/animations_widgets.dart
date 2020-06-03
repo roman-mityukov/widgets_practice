@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetspractice/animations/animated_builder.dart';
+import 'package:widgetspractice/animations/animated_container.dart';
 
 class AnimationsWidgets extends StatelessWidget {
   @override
@@ -27,6 +28,12 @@ class AnimationsWidgets extends StatelessWidget {
               'AnimatedBuilder',
               () {
                 _navigateTo(AnimatedBuilderPractice());
+              },
+            ),
+            _buildButton(
+              'AnimatedContainer',
+              () {
+                _navigateTo(AnimatedContainerPractice());
               },
             ),
           ],
