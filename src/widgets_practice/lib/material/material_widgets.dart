@@ -21,6 +21,8 @@ import 'package:widgetspractice/material/outline_button.dart';
 import 'package:widgetspractice/material/popup_menu_button.dart';
 import 'package:widgetspractice/material/radio.dart';
 import 'package:widgetspractice/material/raised_button.dart';
+import 'package:widgetspractice/material/drawer.dart';
+import 'package:widgetspractice/material/scaffold.dart';
 import 'package:widgetspractice/material/simple_dialog.dart';
 import 'package:widgetspractice/material/slider.dart';
 import 'package:widgetspractice/material/snackbar.dart';
@@ -119,6 +121,12 @@ class MaterialWidgets extends StatelessWidget {
               },
             ),
             _buildButton(
+              'Drawer',
+              () {
+                _navigateTo(DrawerPractice());
+              },
+            ),
+            _buildButton(
               'DropdownButton',
               () {
                 _navigateTo(DropdownButtonPractice());
@@ -182,6 +190,12 @@ class MaterialWidgets extends StatelessWidget {
               'RaisedButton',
               () {
                 _navigateTo(RaisedButtonPractice());
+              },
+            ),
+            _buildButton(
+              'Scaffold',
+              () {
+                _navigateTo(ScaffoldPractice());
               },
             ),
             _buildButton(

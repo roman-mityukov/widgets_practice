@@ -114,12 +114,12 @@ Text - 3/0
 - RichText
 - Text
 
-Material - 37/30
+Material - 37/32
 + Appbar
 + BottomNavigationBar
-- Drawer
++ Drawer
 - MaterialApp
-- Scaffold
++ Scaffold
 - SliverAppBar
 + TabBar
 + TabBarView
@@ -179,4 +179,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-157/87
+157/89
