@@ -1,15 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-// https://api.flutter.dev/flutter/widgets/ScaleTransition-class.html
-class ScaleTransitionPractice extends StatefulWidget {
+// https://api.flutter.dev/flutter/widgets/SizeTransition-class.html
+class SizeTransitionPractice extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return _StateScaleTransitionPractice();
+    return _StateSizeTransitionPractice();
   }
 }
 
-class _StateScaleTransitionPractice extends State<ScaleTransitionPractice>
+class _StateSizeTransitionPractice extends State<SizeTransitionPractice>
     with SingleTickerProviderStateMixin {
   final _tween = Tween(begin: 1.0, end: 2.0);
 
@@ -29,17 +29,17 @@ class _StateScaleTransitionPractice extends State<ScaleTransitionPractice>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ScaleTransition'),
+        title: Text('SizeTransition'),
       ),
       body: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           Expanded(
             child: Center(
-              child: ScaleTransition(
-                scale: _tween.animate(_controller),
+              child: SizeTransition(
+                sizeFactor: _tween.animate(_controller),
                 child: Container(
-                  width: 48,
+                  width: 96,
                   height: 96,
                   color: Colors.green,
                 ),
