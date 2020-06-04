@@ -7,6 +7,7 @@ import 'package:widgetspractice/animations/animated_default_text_style.dart';
 import 'package:widgetspractice/animations/animated_list.dart';
 import 'package:widgetspractice/animations/animated_opacity.dart';
 import 'package:widgetspractice/animations/decorated_box_transition.dart';
+import 'package:widgetspractice/animations/fade_transition.dart';
 
 class AnimationsWidgets extends StatelessWidget {
   @override
@@ -69,6 +70,12 @@ class AnimationsWidgets extends StatelessWidget {
               'DecoratedBoxTransition',
               () {
                 _navigateTo(DecoratedBoxTransitionPractice());
+              },
+            ),
+            _buildButton(
+              'FadeTransition',
+              () {
+                _navigateTo(FadeTransitionPractice());
               },
             ),
           ],
