@@ -1,22 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-// Работает, только если PositionedTransition расположен в Stack
-// https://api.flutter.dev/flutter/widgets/PositionedTransition-class.html
-class PositionedTransitionPractice extends StatefulWidget {
+// https://api.flutter.dev/flutter/widgets/RotationTransition-class.html
+class RotationTransitionPractice extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return _StatePositionedTransitionPractice();
+    return _StateRotationTransitionPractice();
   }
 }
 
-class _StatePositionedTransitionPractice
-    extends State<PositionedTransitionPractice>
+class _StateRotationTransitionPractice extends State<RotationTransitionPractice>
     with SingleTickerProviderStateMixin {
-  final RelativeRectTween _relativeRectTween = RelativeRectTween(
-    begin: RelativeRect.fromLTRB(80, 80, 180, 180),
-    end: RelativeRect.fromLTRB(0, 0, 40, 40),
-  );
+  final _tween = Tween(begin: 0.0, end: 0.25);
 
   AnimationController _controller;
 
@@ -34,21 +29,21 @@ class _StatePositionedTransitionPractice
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('PositionedTransition'),
+        title: Text('RotationTransition'),
       ),
       body: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           Expanded(
-            child: Stack(
-              children: <Widget>[
-                PositionedTransition(
-                  rect: _relativeRectTween.animate(_controller),
-                  child: Container(
-                    color: Colors.green,
-                  ),
+            child: Center(
+              child: RotationTransition(
+                turns: _tween.animate(_controller),
+                child: Container(
+                  width: 48,
+                  height: 96,
+                  color: Colors.green,
                 ),
-              ],
+              ),
             ),
           ),
           SizedBox(

@@ -9,6 +9,7 @@ import 'package:widgetspractice/animations/animated_opacity.dart';
 import 'package:widgetspractice/animations/decorated_box_transition.dart';
 import 'package:widgetspractice/animations/fade_transition.dart';
 import 'package:widgetspractice/animations/positioned_transition.dart';
+import 'package:widgetspractice/animations/rotation_transition.dart';
 
 class AnimationsWidgets extends StatelessWidget {
   @override
@@ -83,6 +84,12 @@ class AnimationsWidgets extends StatelessWidget {
               'PositionedTransition',
               () {
                 _navigateTo(PositionedTransitionPractice());
+              },
+            ),
+            _buildButton(
+              'RotationTransition',
+              () {
+                _navigateTo(RotationTransitionPractice());
               },
             ),
           ],
