@@ -10,6 +10,7 @@ import 'package:widgetspractice/animations/decorated_box_transition.dart';
 import 'package:widgetspractice/animations/fade_transition.dart';
 import 'package:widgetspractice/animations/positioned_transition.dart';
 import 'package:widgetspractice/animations/rotation_transition.dart';
+import 'package:widgetspractice/animations/scale_transition.dart';
 
 class AnimationsWidgets extends StatelessWidget {
   @override
@@ -90,6 +91,12 @@ class AnimationsWidgets extends StatelessWidget {
               'RotationTransition',
               () {
                 _navigateTo(RotationTransitionPractice());
+              },
+            ),
+            _buildButton(
+              'ScaleTransition',
+                  () {
+                _navigateTo(ScaleTransitionPractice());
               },
             ),
           ],
