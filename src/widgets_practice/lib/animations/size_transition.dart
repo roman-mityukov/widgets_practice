@@ -26,6 +26,12 @@ class _StateSizeTransitionPractice extends State<SizeTransitionPractice>
   }
 
   @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(

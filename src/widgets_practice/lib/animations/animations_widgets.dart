@@ -12,6 +12,7 @@ import 'package:widgetspractice/animations/positioned_transition.dart';
 import 'package:widgetspractice/animations/rotation_transition.dart';
 import 'package:widgetspractice/animations/scale_transition.dart';
 import 'package:widgetspractice/animations/size_transition.dart';
+import 'package:widgetspractice/animations/slide_transition.dart';
 
 class AnimationsWidgets extends StatelessWidget {
   @override
@@ -104,6 +105,12 @@ class AnimationsWidgets extends StatelessWidget {
               'SizeTransition',
               () {
                 _navigateTo(SizeTransitionPractice());
+              },
+            ),
+            _buildButton(
+              'SlideTransition',
+                  () {
+                _navigateTo(SlideTransitionPractice());
               },
             ),
           ],
