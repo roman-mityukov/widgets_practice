@@ -43,7 +43,7 @@ Assets, images, and icon widgets - 4/3
 + Image
 - RawImage
 
-Animations - 17/12
+Animations - 17/13
 + AnimatedBuilder
 + AnimatedContainer
 + AnimatedCrossFade
@@ -60,7 +60,7 @@ Animations - 17/12
 + RotationTransition
 + ScaleTransition
 + SizeTransition
-- SlideTransition
++ SlideTransition
 
 Async - 2/2
 + FutureBuilder
@@ -113,7 +113,7 @@ Text - 3/1
 - RichText
 - Text
 
-Material - 37/34
+Material - 37/35
 + Appbar
 + BottomNavigationBar
 + Drawer
@@ -132,7 +132,7 @@ Material - 37/34
 + PopupMenuButton
 + RaisedButton
 + Checkbox
-- DateTimePickers
++ DateTimePickers
 + Radio
 + Slider
 + Switch
@@ -178,4 +178,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-152/104
+152/106

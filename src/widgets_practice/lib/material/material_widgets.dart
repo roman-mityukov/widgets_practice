@@ -10,6 +10,7 @@ import 'package:widgetspractice/material/checkbox.dart';
 import 'package:widgetspractice/material/chip.dart';
 import 'package:widgetspractice/material/circularprogressindicator.dart';
 import 'package:widgetspractice/material/data_table.dart';
+import 'package:widgetspractice/material/date_time_pickers.dart';
 import 'package:widgetspractice/material/divider.dart';
 import 'package:widgetspractice/material/dropdown_button.dart';
 import 'package:widgetspractice/material/expansion_panel_list.dart';
@@ -113,6 +114,12 @@ class MaterialWidgets extends StatelessWidget {
               'DataTable',
               () {
                 _navigateTo(DataTablePractice());
+              },
+            ),
+            _buildButton(
+              'DateTimePickers',
+                  () {
+                _navigateTo(DateTimePickersPractice());
               },
             ),
             _buildButton(
