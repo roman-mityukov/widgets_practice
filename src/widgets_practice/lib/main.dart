@@ -4,6 +4,7 @@ import 'package:logging/logging.dart';
 import 'package:widgetspractice/animations/animations_widgets.dart';
 import 'package:widgetspractice/assets_images_icon/assets_images_icon_widgets.dart';
 import 'package:widgetspractice/async/async_widgets.dart';
+import 'package:widgetspractice/input/input_widgets.dart';
 import 'package:widgetspractice/interaction_models/interaction_models_widgets.dart';
 import 'package:widgetspractice/layout/layout_widgets.dart';
 import 'package:widgetspractice/material/material_widgets.dart';
@@ -57,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             _buildButton(
               'Animations',
-                  () {
+              () {
                 _navigateTo(AnimationsWidgets());
               },
             ),
@@ -80,14 +81,20 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             _buildButton(
+              'Input',
+              () {
+                _navigateTo(InputWidgets());
+              },
+            ),
+            _buildButton(
               'Layout',
-                  () {
+              () {
                 _navigateTo(LayoutWidgets());
               },
             ),
             _buildButton(
               'Material',
-                  () {
+              () {
                 _navigateTo(MaterialWidgets());
               },
             ),
@@ -111,7 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             _buildButton(
               'Text',
-                  () {
+              () {
                 _navigateTo(TextWidgets());
               },
             ),
