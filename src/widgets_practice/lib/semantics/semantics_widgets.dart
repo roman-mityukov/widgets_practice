@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:widgetspractice/styling/media_query.dart';
+import 'package:widgetspractice/semantics/semantics.dart';
 
-class StylingWidgets extends StatelessWidget {
+class SemanticsWidgets extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Function(Widget widget) _navigateTo = (Widget widget) {
@@ -17,16 +17,16 @@ class StylingWidgets extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Styling widgets'),
+        title: Text('Semantics widgets'),
       ),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             _buildButton(
-              'MediaQuery',
+              'Semantics',
                   () {
-                _navigateTo(MediaQueryPractice());
+                _navigateTo(SemanticsPractice());
               },
             ),
           ],

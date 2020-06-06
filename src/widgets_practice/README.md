@@ -1,9 +1,9 @@
 # widgetspractice
 
-Accessibility - 3/0
-- Semantics
-- MergeSemantics
-- ExcludeSemantics
+Accessibility - 3/3
++ Semantics
++ MergeSemantics
++ ExcludeSemantics
 
 Layout - 30/28
 + Align
@@ -37,11 +37,10 @@ Layout - 30/28
 + Table
 + Wrap
 
-Assets, images, and icon widgets - 4/3
+Assets, images, and icon widgets - 3/3
 + AssetBundle
 + Icon
 + Image
-- RawImage
 
 Animations - 17/13
 + AnimatedBuilder
@@ -178,4 +177,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-152/107
+151/110

@@ -10,6 +10,7 @@ import 'package:widgetspractice/layout/layout_widgets.dart';
 import 'package:widgetspractice/material/material_widgets.dart';
 import 'package:widgetspractice/painting_and_effects/painting_and_effects_widgets.dart';
 import 'package:widgetspractice/scrolling/scrolling_widgets.dart';
+import 'package:widgetspractice/semantics/semantics_widgets.dart';
 import 'package:widgetspractice/styling/styling_widgets.dart';
 import 'package:widgetspractice/text/text_widgets.dart';
 
@@ -36,6 +37,7 @@ void main() {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(),
+      //showSemanticsDebugger: true,
     ),
   );
 }
@@ -108,6 +110,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'Scrolling',
               () {
                 _navigateTo(ScrollingWidgets());
+              },
+            ),
+            _buildButton(
+              'Semantics',
+              () {
+                _navigateTo(SemanticsWidgets());
               },
             ),
             _buildButton(
