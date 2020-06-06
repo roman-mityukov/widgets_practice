@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetspractice/layout/baseline.dart';
+import 'package:widgetspractice/layout/custom_single_child_layout.dart';
 import 'package:widgetspractice/layout/flow.dart';
 import 'package:widgetspractice/layout/grid_view.dart';
 import 'package:widgetspractice/layout/list_view.dart';
@@ -97,6 +98,12 @@ class LayoutWidgets extends StatelessWidget {
               'Container',
               () {
                 _navigateTo(ContainerPractice());
+              },
+            ),
+            _buildButton(
+              'CustomSingleChildLayout',
+                  () {
+                _navigateTo(CustomSingleChildLayoutPractice());
               },
             ),
             _buildButton(

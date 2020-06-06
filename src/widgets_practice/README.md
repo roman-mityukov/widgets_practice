@@ -5,14 +5,14 @@ Accessibility - 3/3
 + MergeSemantics
 + ExcludeSemantics
 
-Layout - 30/28
+Layout - 30/29
 + Align
 + AspectRatio
 + Baseline
 + Center
 + ConstrainedBox
 + Container
-- CustomSingleChildLayout
++ CustomSingleChildLayout
 + Expanded
 + FittedBox
 + FractionallySizedBox
@@ -177,4 +177,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-151/113
+151/114
