@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetspractice/text/default_text_style.dart';
+import 'package:widgetspractice/text/text.dart';
 
 class TextWidgets extends StatelessWidget {
   @override
@@ -27,6 +28,12 @@ class TextWidgets extends StatelessWidget {
               'DefaultTextStyle',
               () {
                 _navigateTo(DefaultTextStylePractice());
+              },
+            ),
+            _buildButton(
+              'Text',
+                  () {
+                _navigateTo(TextPractice());
               },
             ),
           ],
