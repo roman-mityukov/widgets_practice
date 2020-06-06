@@ -107,9 +107,9 @@ Styling widgets - 2/1
 + MediaQuery
 - Theme
 
-Text - 3/2
+Text - 3/3
 + DefaultTextStyle
-- RichText
++ RichText
 + Text
 
 Material - 37/35
@@ -177,4 +177,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-151/111
+151/112

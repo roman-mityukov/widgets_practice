@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:widgetspractice/text/default_text_style.dart';
+import 'package:widgetspractice/text/rich_text.dart';
 import 'package:widgetspractice/text/text.dart';
 
 class TextWidgets extends StatelessWidget {
@@ -32,8 +33,14 @@ class TextWidgets extends StatelessWidget {
             ),
             _buildButton(
               'Text',
-                  () {
+              () {
                 _navigateTo(TextPractice());
+              },
+            ),
+            _buildButton(
+              'RichText',
+              () {
+                _navigateTo(RichTextPractice());
               },
             ),
           ],

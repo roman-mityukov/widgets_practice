@@ -19,7 +19,6 @@ class TextPractice extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
-          RichText(),
           const Text.rich(
             TextSpan(
               text: 'Hello', // default text style
