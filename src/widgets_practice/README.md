@@ -42,7 +42,7 @@ Assets, images, and icon widgets - 3/3
 + Icon
 + Image
 
-Animations - 17/13
+Animations - 17/14
 + AnimatedBuilder
 + AnimatedContainer
 + AnimatedCrossFade
@@ -54,7 +54,7 @@ Animations - 17/13
 - AnimatedWidgetBaseState
 + DecoratedBoxTransition
 + FadeTransition
-- Hero
++ Hero
 + PositionedTransition
 + RotationTransition
 + ScaleTransition
@@ -177,4 +177,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-151/112
+151/113

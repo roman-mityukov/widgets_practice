@@ -8,6 +8,7 @@ import 'package:widgetspractice/animations/animated_list.dart';
 import 'package:widgetspractice/animations/animated_opacity.dart';
 import 'package:widgetspractice/animations/decorated_box_transition.dart';
 import 'package:widgetspractice/animations/fade_transition.dart';
+import 'package:widgetspractice/animations/hero.dart';
 import 'package:widgetspractice/animations/positioned_transition.dart';
 import 'package:widgetspractice/animations/rotation_transition.dart';
 import 'package:widgetspractice/animations/scale_transition.dart';
@@ -84,6 +85,12 @@ class AnimationsWidgets extends StatelessWidget {
               },
             ),
             _buildButton(
+              'Hero',
+              () {
+                _navigateTo(HeroAnimationPractice());
+              },
+            ),
+            _buildButton(
               'PositionedTransition',
               () {
                 _navigateTo(PositionedTransitionPractice());
@@ -109,7 +116,7 @@ class AnimationsWidgets extends StatelessWidget {
             ),
             _buildButton(
               'SlideTransition',
-                  () {
+              () {
                 _navigateTo(SlideTransitionPractice());
               },
             ),
