@@ -5,7 +5,7 @@ Accessibility - 3/3
 + MergeSemantics
 + ExcludeSemantics
 
-Layout - 30/29
+Layout - 30/30
 + Align
 + AspectRatio
 + Baseline
@@ -25,7 +25,7 @@ Layout - 30/29
 + SizedBox
 + SizedBoxOverflow
 + Column
-- CustomMultiChildLayout
++ CustomMultiChildLayout
 + Flow
 + GridView
 + IndexedStack
@@ -177,4 +177,4 @@ Cupertino - 24/0
 - CupertinoTextField
 - CupertinoTimePicker
 
-151/114
+151/115

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:logging/logging.dart';
 
-// Кастомный лэйаут для потомка
+// Кастомный лэйаут для виджета с одним потомком
 // https://api.flutter.dev/flutter/widgets/CustomSingleChildLayout-class.html
 // https://api.flutter.dev/flutter/rendering/SingleChildLayoutDelegate-class.html
 class CustomSingleChildLayoutPractice extends StatelessWidget {
