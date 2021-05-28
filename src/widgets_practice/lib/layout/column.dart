@@ -7,6 +7,7 @@ import 'package:flutter/widgets.dart';
 // crossAxisAlignment выравнивает по cross axis, если
 // CrossAxisAlignment.stretch, то дает своим детям в качестве
 // ограничения по высоте свой maxWidth
+// Column дает горизонтальный constraint, но не дает вертикальный
 // https://api.flutter.dev/flutter/widgets/Column-class.html
 class ColumnPractice extends StatelessWidget {
   @override

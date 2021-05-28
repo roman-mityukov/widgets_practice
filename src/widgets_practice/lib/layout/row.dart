@@ -7,6 +7,7 @@ import 'package:flutter/widgets.dart';
 // crossAxisAlignment выравнивает по cross axis, если
 // CrossAxisAlignment.stretch, то дает своим детям в качестве
 // ограничения по высоте свой maxHeight
+// Row дает вертикальный constraint, но не дает горизонтальный
 // https://api.flutter.dev/flutter/widgets/Row-class.html
 class RowPractice extends StatelessWidget {
   @override
