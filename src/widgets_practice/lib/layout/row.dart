@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:logging/logging.dart';
 
 // Показывает потомков в горизонтальном одномерном массиве
 // mainAxisSize - max - оставляет доступное свободное пространство,
@@ -10,10 +11,14 @@ import 'package:flutter/widgets.dart';
 // Row дает вертикальный constraint, но не дает горизонтальный
 // https://api.flutter.dev/flutter/widgets/Row-class.html
 class RowPractice extends StatelessWidget {
+  final _logger = Logger('RowPractice');
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Row'),),
+      appBar: AppBar(
+        title: Text('Row'),
+      ),
       body: Column(
         children: <Widget>[
           Row(
@@ -121,27 +126,36 @@ class RowPractice extends StatelessWidget {
               ),
             ],
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              Text('space\nevenly'),
-              Container(
-                color: Colors.red,
-                width: 50,
-                height: 50,
-              ),
-              Container(
-                color: Colors.red,
-                width: 50,
-                height: 50,
-              ),
-              Container(
-                color: Colors.red,
-                width: 50,
-                height: 50,
-              ),
-            ],
-          )
+          LayoutBuilder(
+            builder: (context, constraints) {
+              _logger.fine(
+                'constraints maxWidth ${constraints.maxWidth}, maxHeight ${constraints.maxHeight}',
+              );
+              // Column дает горизонтальный constraint, но не дает вертикальный
+              // RowPractice: constraints maxWidth 392.72727272727275, maxHeight Infinity
+              return Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Text('space\nevenly'),
+                  Container(
+                    color: Colors.red,
+                    width: 50,
+                    height: 50,
+                  ),
+                  Container(
+                    color: Colors.red,
+                    width: 50,
+                    height: 50,
+                  ),
+                  Container(
+                    color: Colors.red,
+                    width: 50,
+                    height: 50,
+                  ),
+                ],
+              );
+            },
+          ),
         ],
       ),
     );

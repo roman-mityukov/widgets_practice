@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:logging/logging.dart';
 
 // Показывает потомков в вертикальном одномерном массиве
 // mainAxisSize - max - оставляет доступное свободное пространство,
@@ -10,33 +11,47 @@ import 'package:flutter/widgets.dart';
 // Column дает горизонтальный constraint, но не дает вертикальный
 // https://api.flutter.dev/flutter/widgets/Column-class.html
 class ColumnPractice extends StatelessWidget {
+  final _logger = Logger('ColumnPractice');
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
-      appBar: AppBar(title: Text('Column'),),
+      appBar: AppBar(
+        title: Text('Column'),
+      ),
       body: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: <Widget>[
-              Text('start'),
-              Container(
-                color: Colors.red,
-                width: 50,
-                height: 50,
-              ),
-              Container(
-                color: Colors.red,
-                width: 50,
-                height: 50,
-              ),
-              Container(
-                color: Colors.red,
-                width: 50,
-                height: 50,
-              ),
-            ],
+          LayoutBuilder(
+            builder: (context, constraints) {
+              _logger.fine(
+                'constraints maxWidth ${constraints.maxWidth}, maxHeight ${constraints.maxHeight}',
+              );
+              // ColumnPractice: constraints maxWidth Infinity, maxHeight 718.5454545454545
+              // Row дает вертикальный constraint, но не дает горизонтальный
+
+              return Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Text('start'),
+                  Container(
+                    color: Colors.red,
+                    width: 50,
+                    height: 50,
+                  ),
+                  Container(
+                    color: Colors.red,
+                    width: 50,
+                    height: 50,
+                  ),
+                  Container(
+                    color: Colors.red,
+                    width: 50,
+                    height: 50,
+                  ),
+                ],
+              );
+            },
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
