@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:logging/logging.dart';
 
 // Определяет позицию и размер своего ребенка в соответствии со своими
 // свойствами fit (по умолчанию BoxFit.contain) и align (по умолчанию
@@ -7,6 +8,8 @@ import 'package:flutter/widgets.dart';
 // https://api.flutter.dev/flutter/widgets/FittedBox-class.html
 // https://habr.com/ru/post/500210/
 class FittedBoxPractice extends StatelessWidget {
+  final _logger = Logger('FittedBoxPractice');
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,7 +54,32 @@ class FittedBoxPractice extends StatelessWidget {
               fit: BoxFit.none,
               alignment: Alignment.bottomLeft,
             ),
-          )
+          ),
+          // Column дает горизонтальный constraint, но не дает вертикальный
+          // Row наоборот
+          FittedBox(
+            fit: BoxFit.fitWidth,
+            child: RichText(
+              text: TextSpan(
+                text: '525471',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 124,
+                  fontWeight: FontWeight.bold,
+                ),
+                children: <TextSpan>[
+                  TextSpan(
+                    text: ' steps',
+                    style: TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.normal,
+                      color: Colors.black,
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
